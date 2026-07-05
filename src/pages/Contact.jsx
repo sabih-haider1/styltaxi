@@ -133,14 +133,17 @@ export default function Contact() {
                       <option value="support">{t('contact.topics.support')}</option>
                     </select>
                   </Field>
-                  <Field label={t('contact.message')} htmlFor="c-message" error={errors.message && t('booking.validation.nameRequired')}>
+                  <Field label={t('contact.message')} htmlFor="c-message" error={errors.message?.message}>
                     <textarea
                       id="c-message"
                       rows={5}
                       placeholder={t('contact.messagePlaceholder')}
                       className={`${inputCls} resize-none`}
                       aria-invalid={!!errors.message || undefined}
-                      {...register('message', { required: true, minLength: 5 })}
+                      {...register('message', {
+                        required: t('contact.validation.messageRequired'),
+                        minLength: { value: 5, message: t('contact.validation.messageTooShort') },
+                      })}
                     />
                   </Field>
                   <Button type="submit" size="lg" disabled={isSubmitting} aria-busy={isSubmitting}>

@@ -387,6 +387,10 @@
     },
     "message": "El teu missatge",
     "messagePlaceholder": "Com et podem ajudar?",
+    "validation": {
+      "messageRequired": "Si us plau, escriu el teu missatge",
+      "messageTooShort": "Si us plau, escriu un missatge més llarg"
+    },
     "send": "Enviar missatge",
     "sent": "Missatge enviat! Et respondrem ben aviat.",
     "mapTitle": "Àrea de servei de StylTaxi — Barcelona"

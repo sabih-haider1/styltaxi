@@ -387,6 +387,10 @@
     },
     "message": "Your message",
     "messagePlaceholder": "How can we help you?",
+    "validation": {
+      "messageRequired": "Please enter your message",
+      "messageTooShort": "Please write a longer message"
+    },
     "send": "Send message",
     "sent": "Message sent! We will get back to you shortly.",
     "mapTitle": "StylTaxi service area — Barcelona"
