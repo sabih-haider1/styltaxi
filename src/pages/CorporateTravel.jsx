@@ -35,7 +35,7 @@ export default function CorporateTravel() {
               const Icon = BENEFIT_ICONS[i]
               return (
                 <motion.div
-                  key={benefit.title}
+                  key={i}
                   variants={fadeUp}
                   whileHover={{ y: -6 }}
                   className="rounded-3xl border border-ink-100 bg-white p-7 shadow-soft transition-shadow hover:shadow-lift"

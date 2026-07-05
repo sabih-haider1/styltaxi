@@ -58,7 +58,7 @@ export default function About() {
               const Icon = VALUE_ICONS[i]
               return (
                 <motion.div
-                  key={value.title}
+                  key={i}
                   variants={fadeUp}
                   whileHover={{ y: -6 }}
                   className="rounded-3xl bg-white p-9 shadow-soft transition-shadow hover:shadow-lift"

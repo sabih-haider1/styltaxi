@@ -35,7 +35,7 @@ export default function AirportTransfers() {
               const Icon = BENEFIT_ICONS[i]
               return (
                 <motion.div
-                  key={benefit.title}
+                  key={i}
                   variants={fadeUp}
                   whileHover={{ y: -6 }}
                   className="rounded-3xl border border-ink-100 bg-white p-7 shadow-soft transition-shadow hover:shadow-lift"
@@ -62,9 +62,9 @@ export default function AirportTransfers() {
             viewport={{ once: true, margin: '-60px' }}
             className="grid gap-7 md:grid-cols-3"
           >
-            {terminals.map((terminal) => (
+            {terminals.map((terminal, i) => (
               <motion.div
-                key={terminal.name}
+                key={i}
                 variants={fadeUp}
                 className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-colors hover:border-gold-500/40"
               >

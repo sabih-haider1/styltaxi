@@ -33,7 +33,7 @@ export default function Pricing() {
               const featured = i === 1
               return (
                 <motion.div
-                  key={tier.name}
+                  key={i}
                   variants={fadeUp}
                   whileHover={{ y: -8 }}
                   transition={{ type: 'spring', stiffness: 280, damping: 24 }}
@@ -98,8 +98,8 @@ export default function Pricing() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-ink-50">
-                {routes.map((route) => (
-                  <tr key={`${route.from}-${route.to}`} className="group transition-colors hover:bg-brand-50/50">
+                {routes.map((route, i) => (
+                  <tr key={i} className="group transition-colors hover:bg-brand-50/50">
                     <td className="px-6 py-4.5 font-medium text-ink-900 md:px-8">
                       {route.from}
                       <span className="mt-0.5 flex items-center gap-1.5 text-xs text-ink-400 sm:hidden">

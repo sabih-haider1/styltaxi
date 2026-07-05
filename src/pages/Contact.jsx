@@ -48,7 +48,7 @@ export default function Contact() {
             viewport={{ once: true, margin: '-60px' }}
             className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
           >
-            {cards.map(({ Icon, title, value, text, href }) => {
+            {cards.map(({ Icon, title, value, text, href }, i) => {
               const inner = (
                 <>
                   <span className="inline-flex rounded-2xl bg-brand-50 p-3 text-brand-700 transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white">
@@ -64,7 +64,7 @@ export default function Contact() {
               const cls =
                 'group block rounded-3xl border border-ink-100 bg-white p-7 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lift'
               return (
-                <motion.div key={title} variants={fadeUp}>
+                <motion.div key={i} variants={fadeUp}>
                   {href ? (
                     <a href={href} className={cls} {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
                       {inner}

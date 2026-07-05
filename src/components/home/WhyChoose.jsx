@@ -32,7 +32,7 @@ export default function WhyChoose() {
             const Icon = ICONS[i]
             return (
               <motion.li
-                key={item.title}
+                key={i}
                 variants={fadeUp}
                 whileHover={{ y: -6 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 24 }}

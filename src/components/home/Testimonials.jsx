@@ -19,9 +19,9 @@ export default function Testimonials() {
           viewport={{ once: true, margin: '-60px' }}
           className="grid gap-7 md:grid-cols-3"
         >
-          {items.map((item) => (
+          {items.map((item, i) => (
             <motion.figure
-              key={item.name}
+              key={i}
               variants={fadeUp}
               whileHover={{ y: -6 }}
               transition={{ type: 'spring', stiffness: 300, damping: 24 }}

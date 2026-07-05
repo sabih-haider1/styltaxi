@@ -29,7 +29,7 @@ export default function HowItWorks() {
           {steps.map((step, i) => {
             const Icon = ICONS[i]
             return (
-              <motion.li key={step.title} variants={fadeUp} className="relative text-center">
+              <motion.li key={i} variants={fadeUp} className="relative text-center">
                 <div className="relative mx-auto mb-7 inline-flex">
                   <span className="absolute -inset-2 rounded-full bg-brand-100/70 blur-md" aria-hidden />
                   <span className="relative inline-flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-brand-700 text-white shadow-glow">

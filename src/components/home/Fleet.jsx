@@ -28,7 +28,7 @@ export default function Fleet() {
         >
           {cars.map((car, i) => (
             <motion.article
-              key={car.name}
+              key={i}
               variants={fadeUp}
               whileHover={{ y: -8 }}
               transition={{ type: 'spring', stiffness: 280, damping: 24 }}
