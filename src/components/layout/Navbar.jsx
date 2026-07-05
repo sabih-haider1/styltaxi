@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${
-        solid ? 'glass border-b border-ink-950/5 py-2 shadow-soft' : 'py-4'
+        solid ? 'bg-white border-b border-ink-950/5 py-2 shadow-soft' : 'py-4'
       }`}
     >
       <nav aria-label="Main" className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
