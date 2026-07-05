@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
 import LanguageSwitcher from './LanguageSwitcher'
 import Button from '../ui/Button'
-import { IconMenu, IconX, IconPhone } from '../ui/Icons'
+import { IconMenu, IconX, IconPhone, IconLeaf } from '../ui/Icons'
 import { SITE } from '../../lib/site'
 import { EASE } from '../../lib/motion'
 
@@ -48,12 +48,33 @@ export default function Navbar() {
       }`}
     >
       <nav aria-label="Main" className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label={`${SITE.name} — ${t('nav.home')}`}>
-          <img src="/logo-160.png" alt="" className="h-10 w-10 object-contain md:h-11 md:w-11" />
-          <span className={`font-display text-xl font-bold tracking-tight ${solid ? 'text-ink-950' : 'text-white'}`}>
-            Styl<span className="text-brand-600">Taxi</span>
+        <div className="flex shrink-0 items-center gap-2.5">
+          <Link to="/" className="flex items-center gap-2.5" aria-label={`${SITE.name} — ${t('nav.home')}`}>
+            <picture>
+              <source type="image/webp" srcSet="/logo-88.webp" />
+              <img
+                src="/logo-88.png"
+                alt=""
+                width="44"
+                height="44"
+                className="h-10 w-10 object-contain md:h-11 md:w-11"
+              />
+            </picture>
+            <span className={`font-display text-xl font-bold tracking-tight ${solid ? 'text-ink-950' : 'text-white'}`}>
+              Styl<span className="text-brand-600">Taxi</span>
+            </span>
+          </Link>
+          {/* Zero-emissions badge — the eco fleet is the brand's differentiator */}
+          <span
+            title="Cero Emisiones"
+            className={`inline-flex items-center gap-1.5 rounded-full border px-2 py-1 font-display text-[10px] font-bold uppercase tracking-wider transition-colors ${
+              solid ? 'border-brand-200 bg-brand-50 text-brand-700' : 'border-white/20 bg-white/10 text-brand-300'
+            }`}
+          >
+            <IconLeaf className="h-3.5 w-3.5" />
+            <span className="hidden lg:inline">Cero Emisiones</span>
           </span>
-        </Link>
+        </div>
 
         <ul className="hidden items-center gap-1 lg:flex">
           {LINKS.map(({ to, key }) => (

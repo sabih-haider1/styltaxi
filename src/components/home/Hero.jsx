@@ -19,7 +19,7 @@ export default function Hero() {
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '18%'])
   const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0])
 
-  const points = [t('hero.point1'), t('hero.point2'), t('hero.point3')]
+  const points = [t('hero.point1'), t('hero.point2'), t('hero.point3'), t('hero.point4')]
 
   return (
     <section ref={ref} className="relative flex min-h-svh items-center overflow-hidden bg-ink-950">
@@ -29,15 +29,22 @@ export default function Hero() {
         className={`absolute inset-0 ${parallax ? 'scale-110' : ''}`}
         aria-hidden
       >
-        <img
-          src="/images/hero-1400.jpg"
-          srcSet="/images/hero-800.jpg 800w, /images/hero-1400.jpg 1400w, /images/hero.jpg 2400w"
-          sizes="100vw"
-          alt=""
-          fetchPriority="high"
-          decoding="async"
-          className="h-full w-full object-cover"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/images/hero-800.webp 800w, /images/hero-1400.webp 1400w"
+            sizes="100vw"
+          />
+          <img
+            src="/images/hero-1400.jpg"
+            srcSet="/images/hero-800.jpg 800w, /images/hero-1400.jpg 1400w, /images/hero.jpg 2400w"
+            sizes="100vw"
+            alt=""
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-r from-ink-950/90 via-ink-950/65 to-ink-950/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-ink-950/40" />
       </motion.div>

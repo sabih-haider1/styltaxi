@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link to="/" className="flex items-center gap-2.5">
-              <img src="/logo-160.png" alt="" className="h-11 w-11 object-contain" loading="lazy" />
+              <img src="/logo-88.png" alt="" width="44" height="44" className="h-11 w-11 object-contain" loading="lazy" />
               <span className="font-display text-xl font-bold">
                 Styl<span className="text-brand-500">Taxi</span>
               </span>
