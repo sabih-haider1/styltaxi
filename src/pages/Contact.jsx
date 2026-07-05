@@ -20,7 +20,7 @@ export default function Contact() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm({ defaultValues: { name: '', email: '', message: '' } })
+  } = useForm({ defaultValues: { name: '', email: '', topic: 'general', message: '' } })
 
   const cards = [
     { Icon: IconPhone, title: t('contact.phone'), value: SITE.phone, text: t('contact.phoneText'), href: SITE.phoneHref },
@@ -30,7 +30,11 @@ export default function Contact() {
   ]
 
   const onSubmit = handleSubmit(async (data) => {
-    await deliverForm(`Contact message from ${data.name}`, data)
+    const topicLabel = t(`contact.topics.${data.topic}`)
+    await deliverForm(`Contact enquiry - ${topicLabel} from ${data.name}`, {
+      ...data,
+      topic: topicLabel,
+    })
     setSent(true)
   })
 
@@ -121,6 +125,14 @@ export default function Contact() {
                       />
                     </Field>
                   </div>
+                  <Field label={t('contact.topic')} htmlFor="c-topic">
+                    <select id="c-topic" className={inputCls} {...register('topic')}>
+                      <option value="general">{t('contact.topics.general')}</option>
+                      <option value="booking">{t('contact.topics.booking')}</option>
+                      <option value="quote">{t('contact.topics.quote')}</option>
+                      <option value="support">{t('contact.topics.support')}</option>
+                    </select>
+                  </Field>
                   <Field label={t('contact.message')} htmlFor="c-message" error={errors.message && t('booking.validation.nameRequired')}>
                     <textarea
                       id="c-message"

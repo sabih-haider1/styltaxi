@@ -378,6 +378,13 @@
     "hoursText": "Office: Mon–Fri, 9:00–18:00",
     "formTitle": "Send us a message",
     "name": "Your name",
+    "topic": "Topic",
+    "topics": {
+      "general": "General enquiry",
+      "booking": "Booking enquiry",
+      "quote": "Quote request",
+      "support": "Support request"
+    },
     "message": "Your message",
     "messagePlaceholder": "How can we help you?",
     "send": "Send message",

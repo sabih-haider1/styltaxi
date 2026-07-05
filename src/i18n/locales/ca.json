@@ -378,6 +378,13 @@
     "hoursText": "Oficina: dl–dv, 9:00–18:00",
     "formTitle": "Envia'ns un missatge",
     "name": "El teu nom",
+    "topic": "Tema",
+    "topics": {
+      "general": "Consulta general",
+      "booking": "Consulta de reserva",
+      "quote": "Sol·licitud de pressupost",
+      "support": "Sol·licitud d'ajuda"
+    },
     "message": "El teu missatge",
     "messagePlaceholder": "Com et podem ajudar?",
     "send": "Enviar missatge",

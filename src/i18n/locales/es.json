@@ -378,6 +378,13 @@
     "hoursText": "Oficina: lun–vie, 9:00–18:00",
     "formTitle": "Envíanos un mensaje",
     "name": "Tu nombre",
+    "topic": "Tema",
+    "topics": {
+      "general": "Consulta general",
+      "booking": "Consulta de reserva",
+      "quote": "Solicitud de presupuesto",
+      "support": "Solicitud de ayuda"
+    },
     "message": "Tu mensaje",
     "messagePlaceholder": "¿En qué podemos ayudarte?",
     "send": "Enviar mensaje",

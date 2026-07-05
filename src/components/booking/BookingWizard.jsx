@@ -58,8 +58,9 @@ export default function BookingWizard() {
     setStatus('submitting')
     const ref = bookingReference()
     try {
-      await deliverForm(`New booking ${ref} — ${data.pickup} → ${data.destination}`, {
+      await deliverForm(`Passenger booking ${ref} — ${data.pickup} → ${data.destination}`, {
         reference: ref,
+        topic: 'Passenger booking',
         ...data,
         roundTrip: data.roundTrip ? 'yes' : 'no',
         distance: route?.distance || 'n/a',
