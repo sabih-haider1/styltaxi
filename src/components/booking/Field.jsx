@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 export const inputCls =
   'w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-ink-950 placeholder:text-ink-300 transition-all duration-200 focus:border-brand-600 focus:ring-4 focus:ring-brand-600/15 focus:outline-none aria-[invalid=true]:border-accent-600 aria-[invalid=true]:ring-accent-600/10'
 
+export const dateTimeInputCls = `${inputCls} appearance-none [-webkit-appearance:none] min-w-0`
+
 /** Label + control + animated error message. */
 export default function Field({ label, htmlFor, error, hint, optional, optionalLabel, children, className = '' }) {
   return (

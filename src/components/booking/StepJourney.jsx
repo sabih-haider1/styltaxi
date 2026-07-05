@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { AnimatePresence, motion } from 'framer-motion'
-import Field, { inputCls } from './Field'
+import Field, { inputCls, dateTimeInputCls } from './Field'
 import PlacesInput from './PlacesInput'
 import { IconSwap, IconPlane } from '../ui/Icons'
 import { TERMINALS } from '../../lib/site'
@@ -116,7 +116,7 @@ export default function StepJourney({ form, airportLeg, onPlaceChange }) {
             type="date"
             min={todayISO()}
             aria-invalid={!!errors.date || undefined}
-            className={inputCls}
+            className={dateTimeInputCls}
             {...register('date')}
           />
         </Field>
@@ -125,7 +125,7 @@ export default function StepJourney({ form, airportLeg, onPlaceChange }) {
             id="time"
             type="time"
             aria-invalid={!!errors.time || undefined}
-            className={inputCls}
+            className={dateTimeInputCls}
             {...register('time')}
           />
         </Field>
@@ -185,7 +185,7 @@ export default function StepJourney({ form, airportLeg, onPlaceChange }) {
                   type="date"
                   min={todayISO()}
                   aria-invalid={!!errors.returnDate || undefined}
-                  className={inputCls}
+                  className={dateTimeInputCls}
                   {...register('returnDate')}
                 />
               </Field>
@@ -194,7 +194,7 @@ export default function StepJourney({ form, airportLeg, onPlaceChange }) {
                   id="returnTime"
                   type="time"
                   aria-invalid={!!errors.returnTime || undefined}
-                  className={inputCls}
+                  className={dateTimeInputCls}
                   {...register('returnTime')}
                 />
               </Field>
