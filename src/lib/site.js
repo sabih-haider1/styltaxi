@@ -1,10 +1,11 @@
 export const SITE = {
   name: 'StylTaxi',
   url: 'https://styltaxi.com',
-  phone: import.meta.env.VITE_PHONE || '+34 600 000 000',
-  phoneHref: `tel:${(import.meta.env.VITE_PHONE || '+34600000000').replace(/\s/g, '')}`,
-  whatsappHref: `https://wa.me/${import.meta.env.VITE_WHATSAPP || '34600000000'}`,
-  email: import.meta.env.VITE_BOOKING_EMAIL || 'bookings@styltaxi.example',
+  phone: import.meta.env.VITE_PHONE || '93 177 60 00',
+  phoneHref: `tel:${(import.meta.env.VITE_PHONE || '+34931776000').replace(/\s/g, '')}`,
+  whatsappHref: `https://wa.me/${import.meta.env.VITE_WHATSAPP || '34931776000'}`,
+  // Shown publicly on the site; bookings are delivered to VITE_BOOKING_EMAIL.
+  email: import.meta.env.VITE_PUBLIC_EMAIL || 'styltaxisabadell@gmail.com',
   city: 'Barcelona',
   country: 'ES',
   social: {

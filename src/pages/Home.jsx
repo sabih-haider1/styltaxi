@@ -6,6 +6,7 @@ import Stats from '../components/home/Stats'
 import ServicesPreview from '../components/home/ServicesPreview'
 import HowItWorks from '../components/home/HowItWorks'
 import Fleet from '../components/home/Fleet'
+import EcoFleet from '../components/home/EcoFleet'
 import Testimonials from '../components/home/Testimonials'
 import CtaBanner from '../components/home/CtaBanner'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <ServicesPreview />
       <HowItWorks />
       <Fleet />
+      <EcoFleet />
       <Testimonials />
       <CtaBanner />
     </PageWrap>

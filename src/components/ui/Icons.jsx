@@ -145,6 +145,13 @@ export const IconHeadset = make(
 export const IconEuro = make(
   <path d="M17.5 5.5A7.5 7.5 0 0 0 6.8 8.5M17.5 18.5a7.5 7.5 0 0 1-10.7-3M4 10.5h9M4 13.5h8" />
 )
+export const IconLeaf = make(
+  <>
+    <path d="M6 20C6 11 11 5 20 4c0 9-5 15-13 15" />
+    <path d="M6 20c1.5-4.5 5-8.5 9-10.5" />
+  </>
+)
+export const IconBolt = make(<path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5z" />)
 export const IconInstagram = make(
   <>
     <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />

@@ -97,6 +97,22 @@
       { "name": "Taxi Estándar", "desc": "Vehículo urbano confortable", "pax": "Hasta 4 pasajeros", "bags": "2 maletas" }
     ]
   },
+  "eco": {
+    "eyebrow": "Cero Emisiones",
+    "title": "Taxis cero emisiones. Cero compromisos.",
+    "text": "Nuestra flota es totalmente verde: vehículos eléctricos y eco que se deslizan por la ciudad en silencio, sin añadir ni un gramo de CO₂ al aire. La misma puntualidad, el mismo confort — sin huella.",
+    "points": [
+      { "title": "Flota 100% eco", "text": "Vehículos eléctricos e híbridos, en renovación constante e impecablemente mantenidos." },
+      { "title": "Trayectos silenciosos", "text": "Sin ruido de motor ni vibraciones: llega relajado y concentrado." },
+      { "title": "Verde sin coste extra", "text": "Viaja sostenible con los mismos precios fijos y transparentes." },
+      { "title": "Aire más limpio", "text": "Cada trayecto con nosotros evita CO₂ y NOx en nuestras calles." }
+    ],
+    "statValue": "0 g",
+    "statLabel": "de CO₂ por trayecto",
+    "stat2": "100%",
+    "stat2Label": "flota ecológica",
+    "cta": "Viaja en verde — reserva"
+  },
   "how": {
     "title": "Reservar nunca fue tan fácil",
     "subtitle": "Tres pasos sencillos entre tú y un trayecto confirmado.",

@@ -97,6 +97,22 @@
       { "name": "Taxi Estàndard", "desc": "Vehicle urbà confortable", "pax": "Fins a 4 passatgers", "bags": "2 maletes" }
     ]
   },
+  "eco": {
+    "eyebrow": "Cero Emisiones",
+    "title": "Taxis zero emissions. Zero compromisos.",
+    "text": "La nostra flota és totalment verda: vehicles elèctrics i eco que llisquen per la ciutat en silenci, sense afegir ni un gram de CO₂ a l'aire. La mateixa puntualitat, el mateix confort — sense petjada.",
+    "points": [
+      { "title": "Flota 100% eco", "text": "Vehicles elèctrics i híbrids, en renovació constant i impecablement mantinguts." },
+      { "title": "Trajectes silenciosos", "text": "Sense soroll de motor ni vibracions: arriba relaxat i concentrat." },
+      { "title": "Verd sense cost extra", "text": "Viatja sostenible amb els mateixos preus fixos i transparents." },
+      { "title": "Aire més net", "text": "Cada trajecte amb nosaltres evita CO₂ i NOx als nostres carrers." }
+    ],
+    "statValue": "0 g",
+    "statLabel": "de CO₂ per trajecte",
+    "stat2": "100%",
+    "stat2Label": "flota ecològica",
+    "cta": "Viatja en verd — reserva"
+  },
   "how": {
     "title": "Reservar mai havia estat tan fàcil",
     "subtitle": "Tres passos senzills entre tu i un trajecte confirmat.",

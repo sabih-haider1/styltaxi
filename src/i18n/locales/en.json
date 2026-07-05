@@ -97,6 +97,22 @@
       { "name": "Standard Taxi", "desc": "Comfortable city vehicle", "pax": "Up to 4 passengers", "bags": "2 suitcases" }
     ]
   },
+  "eco": {
+    "eyebrow": "Cero Emisiones",
+    "title": "Zero-emission taxis. Zero compromise.",
+    "text": "Our fleet is fully green: electric and eco vehicles that glide through the city in silence, without adding a single gram of CO₂ to the air. Same punctuality, same comfort — no footprint.",
+    "points": [
+      { "title": "100% eco fleet", "text": "Electric and hybrid vehicles, constantly renewed and impeccably maintained." },
+      { "title": "Whisper-quiet rides", "text": "No engine noise, no vibrations — arrive relaxed and focused." },
+      { "title": "Green at no extra cost", "text": "Sustainable travel with the same fixed, transparent prices." },
+      { "title": "Cleaner city air", "text": "Every journey with us keeps CO₂ and NOx out of our streets." }
+    ],
+    "statValue": "0 g",
+    "statLabel": "CO₂ emitted per ride",
+    "stat2": "100%",
+    "stat2Label": "eco-friendly fleet",
+    "cta": "Ride green — book now"
+  },
   "how": {
     "title": "Booking made effortless",
     "subtitle": "Three simple steps between you and a confirmed ride.",
