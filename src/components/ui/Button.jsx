@@ -2,6 +2,10 @@ import { useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Created once at module level: creating it inside render would produce a new
+// component type per render and force React to remount the link every time.
+const MotionLink = motion.create(Link)
+
 const VARIANTS = {
   primary:
     'bg-brand-600 text-white hover:bg-brand-700 shadow-glow',
@@ -86,7 +90,6 @@ export default function Button({
   }
 
   if (to) {
-    const MotionLink = motion.create(Link)
     return (
       <MotionLink to={to} className={cls} onClick={handleClick} {...motionProps} {...rest}>
         {inner}

@@ -1,14 +1,20 @@
 import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion'
 import Button from '../ui/Button'
 import { IconPhone, IconCheck } from '../ui/Icons'
 import { SITE } from '../../lib/site'
 import { EASE } from '../../lib/motion'
+import { useMediaQuery } from '../../lib/useMediaQuery'
 
 export default function Hero() {
   const { t } = useTranslation()
   const ref = useRef(null)
+  // Scroll-linked transforms run on the main thread — desktop only, so
+  // low-powered phones get a perfectly smooth static hero instead.
+  const isDesktop = useMediaQuery('(min-width: 1024px)')
+  const reducedMotion = useReducedMotion()
+  const parallax = isDesktop && !reducedMotion
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '18%'])
   const fade = useTransform(scrollYProgress, [0, 0.7], [1, 0])
@@ -17,26 +23,33 @@ export default function Hero() {
 
   return (
     <section ref={ref} className="relative flex min-h-svh items-center overflow-hidden bg-ink-950">
-      {/* Parallax background */}
-      <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110" aria-hidden>
+      {/* Background (parallax on desktop) */}
+      <motion.div
+        style={parallax ? { y: bgY } : undefined}
+        className={`absolute inset-0 ${parallax ? 'scale-110' : ''}`}
+        aria-hidden
+      >
         <img
-          src="/images/hero.jpg"
+          src="/images/hero-1400.jpg"
+          srcSet="/images/hero-800.jpg 800w, /images/hero-1400.jpg 1400w, /images/hero.jpg 2400w"
+          sizes="100vw"
           alt=""
           fetchPriority="high"
+          decoding="async"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ink-950/90 via-ink-950/65 to-ink-950/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-ink-950/40" />
       </motion.div>
 
-      {/* Soft brand glow */}
+      {/* Soft brand glow — pre-computed radial gradient, no GPU filter cost */}
       <div
         aria-hidden
-        className="absolute -left-40 top-1/4 h-[32rem] w-[32rem] rounded-full bg-brand-600/20 blur-[120px]"
+        className="absolute -left-40 top-1/4 h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(closest-side,rgb(11_143_74/0.28),transparent)]"
       />
 
       <motion.div
-        style={{ opacity: fade }}
+        style={parallax ? { opacity: fade } : undefined}
         className="relative mx-auto w-full max-w-7xl px-4 pb-24 pt-32 sm:px-6 lg:px-8"
       >
         <div className="max-w-3xl">
@@ -44,7 +57,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: EASE, delay: 0.15 }}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 font-display text-xs font-semibold uppercase tracking-[0.18em] text-gold-400 backdrop-blur-sm"
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 font-display text-xs font-semibold uppercase tracking-[0.18em] text-gold-400"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-brand-500" aria-hidden />
             {t('hero.badge')}
@@ -55,12 +68,13 @@ export default function Hero() {
               .split(' ')
               .map((word, i) => (
                 <motion.span
-                  key={i}
+                  key={`${word}-${i}`}
                   className="inline-block"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: EASE, delay: 0.25 + i * 0.06 }}
                 >
+                  {/* nbsp: a plain trailing space is trimmed inside inline-block */}
                   {word}
                   {' '}
                 </motion.span>

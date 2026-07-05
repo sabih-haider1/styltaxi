@@ -9,7 +9,7 @@ export default function Testimonials() {
   const items = t('testimonials.items', { returnObjects: true })
 
   return (
-    <section className="bg-white py-24 md:py-32">
+    <section className="cv-auto bg-white py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="★★★★★" title={t('testimonials.title')} subtitle={t('testimonials.subtitle')} />
         <motion.div

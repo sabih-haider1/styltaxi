@@ -12,8 +12,11 @@ export default function Fleet() {
   const cars = t('fleet.cars', { returnObjects: true })
 
   return (
-    <section className="relative overflow-hidden bg-ink-950 py-24 md:py-32">
-      <div aria-hidden className="absolute right-0 top-0 h-80 w-80 rounded-full bg-brand-600/10 blur-[110px]" />
+    <section className="cv-auto relative overflow-hidden bg-ink-950 py-24 md:py-32">
+      <div
+        aria-hidden
+        className="absolute right-0 top-0 h-80 w-80 rounded-full bg-[radial-gradient(closest-side,rgb(11_143_74/0.16),transparent)]"
+      />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading dark eyebrow={t('footer.available')} title={t('fleet.title')} subtitle={t('fleet.subtitle')} />
         <motion.div

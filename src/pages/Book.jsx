@@ -24,8 +24,8 @@ export default function Book() {
       <div className="relative overflow-hidden">
         {/* Dark decorative header behind the wizard */}
         <div aria-hidden className="absolute inset-x-0 top-0 h-[26rem] bg-ink-950">
-          <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-brand-600/20 blur-[100px]" />
-          <div className="absolute -right-24 top-24 h-72 w-72 rounded-full bg-gold-500/10 blur-[100px]" />
+          <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-[radial-gradient(closest-side,rgb(11_143_74/0.3),transparent)]" />
+          <div className="absolute -right-24 top-24 h-72 w-72 rounded-full bg-[radial-gradient(closest-side,rgb(217_165_0/0.16),transparent)]" />
         </div>
 
         <div className="relative mx-auto max-w-4xl px-4 pb-24 pt-32 sm:px-6 md:pb-32 md:pt-36 lg:px-8">

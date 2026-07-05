@@ -11,7 +11,7 @@ export default function ServicesPreview() {
   const { t } = useTranslation()
 
   return (
-    <section className="bg-ink-50/60 py-24 md:py-32">
+    <section className="cv-auto bg-ink-50/60 py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow={t('services.subtitle')} title={t('services.title')} subtitle={t('services.intro')} />
         <motion.div

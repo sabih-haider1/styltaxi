@@ -13,7 +13,11 @@ export default function PageHero({ title, subtitle, image, compact = false }) {
         <div className="absolute inset-0" aria-hidden>
           <motion.img
             src={image}
+            srcSet={image.endsWith('.jpg') ? `${image.replace(/\.jpg$/, '-sm.jpg')} 700w, ${image} 1400w` : undefined}
+            sizes="100vw"
             alt=""
+            fetchPriority="high"
+            decoding="async"
             initial={{ scale: 1.08, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, ease: EASE }}
@@ -24,7 +28,7 @@ export default function PageHero({ title, subtitle, image, compact = false }) {
       )}
       <div
         aria-hidden
-        className="absolute -right-32 top-0 h-96 w-96 rounded-full bg-brand-600/15 blur-[110px]"
+        className="absolute -right-32 top-0 h-96 w-96 rounded-full bg-[radial-gradient(closest-side,rgb(11_143_74/0.22),transparent)]"
       />
       <div className="relative mx-auto w-full max-w-7xl px-4 pb-14 pt-36 sm:px-6 md:pb-20 lg:px-8">
         <motion.h1

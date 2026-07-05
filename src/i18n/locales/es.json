@@ -147,7 +147,7 @@
       "time": "Hora de recogida",
       "passengers": "Pasajeros",
       "luggage": "Equipaje",
-      "luggageItem": "{{count}} maleta",
+      "luggageItem_one": "{{count}} maleta",
       "luggageItem_other": "{{count}} maletas",
       "roundTrip": "Ida y vuelta",
       "roundTripHint": "También te recogeremos para el viaje de vuelta",

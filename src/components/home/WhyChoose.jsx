@@ -18,7 +18,7 @@ export default function WhyChoose() {
   const items = t('why.items', { returnObjects: true })
 
   return (
-    <section id="why" className="bg-white py-24 md:py-32">
+    <section id="why" className="cv-auto bg-white py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="StylTaxi" title={t('why.title')} subtitle={t('why.subtitle')} />
         <motion.ul

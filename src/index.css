@@ -96,6 +96,13 @@ body {
   text-wrap: balance;
 }
 
+/* Skip rendering below-the-fold sections until they approach the viewport —
+   a large win on long pages for low-powered mobile devices. */
+@utility cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
 /* Google Places autocomplete dropdown, restyled to match the brand */
 .pac-container {
   @apply mt-2 rounded-xl border border-ink-100 font-sans shadow-lift;

@@ -23,5 +23,11 @@ export async function deliverForm(subject, data) {
     }),
   })
   if (!res.ok) throw new Error(`Delivery failed: ${res.status}`)
-  return res.json()
+  const body = await res.json()
+  // FormSubmit answers 200 with success:"false" both for the one-time
+  // activation notice (fine — the message was queued for activation) and for
+  // genuine rejections (not fine). Only the activation case counts as sent.
+  const failed = String(body.success) === 'false' && !/activat/i.test(body.message || '')
+  if (failed) throw new Error(body.message || 'Delivery rejected')
+  return body
 }

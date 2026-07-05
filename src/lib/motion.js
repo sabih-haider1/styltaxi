@@ -22,6 +22,6 @@ export const stagger = (staggerChildren = 0.1, delayChildren = 0) => ({
 
 export const pageTransition = {
   initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.4, ease: EASE } },
-  exit: { opacity: 0, y: -8, transition: { duration: 0.25, ease: EASE } },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.35, ease: EASE } },
+  exit: { opacity: 0, y: -8, transition: { duration: 0.18, ease: EASE } },
 }

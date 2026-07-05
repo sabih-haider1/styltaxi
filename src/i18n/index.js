@@ -23,6 +23,9 @@ i18n
     },
     fallbackLng: 'en',
     supportedLngs: ['en', 'es', 'ca'],
+    // Normalize regional variants (en-US, es-ES, ca-ES) to our bundles so
+    // detection never lands on an unsupported variant with missing strings.
+    load: 'languageOnly',
     interpolation: { escapeValue: false },
     detection: {
       order: ['localStorage', 'navigator'],

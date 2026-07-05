@@ -12,8 +12,14 @@ export default function CtaBanner() {
     <section className="bg-white px-4 pb-24 sm:px-6 md:pb-32 lg:px-8">
       <Reveal variants={scaleIn} className="mx-auto max-w-7xl">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-brand-700 via-brand-600 to-brand-800 px-8 py-16 text-center shadow-lift md:px-16 md:py-24">
-          <div aria-hidden className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-gold-500/20 blur-[90px]" />
-          <div aria-hidden className="absolute -bottom-32 -right-16 h-96 w-96 rounded-full bg-ink-950/30 blur-[100px]" />
+          <div
+            aria-hidden
+            className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-[radial-gradient(closest-side,rgb(217_165_0/0.28),transparent)]"
+          />
+          <div
+            aria-hidden
+            className="absolute -bottom-32 -right-16 h-96 w-96 rounded-full bg-[radial-gradient(closest-side,rgb(18_18_18/0.42),transparent)]"
+          />
           <div
             aria-hidden
             className="absolute inset-0 opacity-[0.07]"

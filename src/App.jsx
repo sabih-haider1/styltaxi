@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence, MotionConfig } from 'framer-motion'
 import Layout from './components/layout/Layout'
+import ErrorBoundary from './components/ErrorBoundary'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
@@ -37,10 +38,16 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <AnimatedRoutes />
-      </Layout>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <MotionConfig reducedMotion="user">
+        <BrowserRouter>
+          <Layout>
+            <ErrorBoundary>
+              <AnimatedRoutes />
+            </ErrorBoundary>
+          </Layout>
+        </BrowserRouter>
+      </MotionConfig>
+    </ErrorBoundary>
   )
 }

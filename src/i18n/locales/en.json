@@ -147,7 +147,7 @@
       "time": "Pickup time",
       "passengers": "Passengers",
       "luggage": "Luggage",
-      "luggageItem": "{{count}} suitcase",
+      "luggageItem_one": "{{count}} suitcase",
       "luggageItem_other": "{{count}} suitcases",
       "roundTrip": "Round trip",
       "roundTripHint": "We will pick you up for the return journey too",

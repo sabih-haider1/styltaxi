@@ -147,7 +147,7 @@
       "time": "Hora de recollida",
       "passengers": "Passatgers",
       "luggage": "Equipatge",
-      "luggageItem": "{{count}} maleta",
+      "luggageItem_one": "{{count}} maleta",
       "luggageItem_other": "{{count}} maletes",
       "roundTrip": "Anada i tornada",
       "roundTripHint": "També et recollirem per al viatge de tornada",
