@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import SmartImage from './ui/SmartImage'
-import { IconArrowRight } from './ui/Icons'
 import { fadeUp } from '../lib/motion'
 
 /** Image card used on the homepage services preview and the Services page. */
@@ -26,10 +25,6 @@ export default function ServiceCard({ service }) {
           <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-white/70 transition-colors duration-300 group-hover:text-white/90">
             {desc}
           </p>
-          <span className="mt-4 inline-flex items-center gap-2 font-display text-sm font-semibold text-gold-400">
-            {t('common.learnMore')}
-            <IconArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" />
-          </span>
         </div>
       </Link>
     </motion.article>
