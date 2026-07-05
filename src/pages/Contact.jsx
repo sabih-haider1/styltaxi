@@ -57,7 +57,7 @@ export default function Contact() {
                   <h3 className="mt-5 font-display text-sm font-semibold uppercase tracking-[0.14em] text-ink-400">
                     {title}
                   </h3>
-                  <p className="mt-1.5 font-display text-lg font-bold text-ink-950">{value}</p>
+                  <p className="mt-1.5 break-all font-display text-lg font-bold leading-snug text-ink-950">{value}</p>
                   <p className="mt-1 text-sm text-ink-400">{text}</p>
                 </>
               )
