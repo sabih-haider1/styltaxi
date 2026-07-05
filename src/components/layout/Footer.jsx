@@ -60,7 +60,7 @@ export default function Footer() {
                   aria-pressed={i18n.language?.startsWith(lang.code)}
                   className={`cursor-pointer rounded-full px-3.5 py-1.5 font-display text-xs font-semibold transition-colors ${
                     i18n.language?.startsWith(lang.code)
-                      ? 'bg-brand-600 text-white'
+                      ? 'bg-brand-700 text-white'
                       : 'bg-white/8 text-white/60 hover:bg-white/15 hover:text-white'
                   }`}
                 >

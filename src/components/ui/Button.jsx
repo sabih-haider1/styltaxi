@@ -7,8 +7,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 const MotionLink = motion.create(Link)
 
 const VARIANTS = {
+  // brand-700 (not 600) keeps white text at a WCAG AA contrast ratio
   primary:
-    'bg-brand-600 text-white hover:bg-brand-700 shadow-glow',
+    'bg-brand-700 text-white hover:bg-brand-800 shadow-glow',
   gold:
     'bg-gold-500 text-ink-950 hover:bg-gold-400',
   dark:

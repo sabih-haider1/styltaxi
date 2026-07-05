@@ -27,7 +27,7 @@ export default function Testimonials() {
               transition={{ type: 'spring', stiffness: 300, damping: 24 }}
               className="flex flex-col rounded-3xl border border-ink-100 bg-gradient-to-b from-white to-ink-50/50 p-8 shadow-soft transition-shadow duration-300 hover:shadow-lift"
             >
-              <div className="flex gap-1 text-gold-500" aria-label="5/5">
+              <div className="flex gap-1 text-gold-500" role="img" aria-label="5/5">
                 {Array.from({ length: 5 }).map((_, s) => (
                   <IconStar key={s} className="h-4.5 w-4.5 fill-gold-500" />
                 ))}

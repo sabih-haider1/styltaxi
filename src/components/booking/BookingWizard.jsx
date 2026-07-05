@@ -104,9 +104,9 @@ export default function BookingWizard() {
                 <span className="flex items-center gap-2.5 md:gap-3">
                   <motion.span
                     animate={{
-                      backgroundColor: done || active ? '#0B8F4A' : '#FFFFFF',
+                      backgroundColor: done || active ? '#056438' : '#FFFFFF',
                       color: done || active ? '#FFFFFF' : '#7e8582',
-                      borderColor: done || active ? '#0B8F4A' : '#c7cbc9',
+                      borderColor: done || active ? '#056438' : '#c7cbc9',
                       scale: active ? 1.08 : 1,
                     }}
                     transition={{ duration: 0.3 }}

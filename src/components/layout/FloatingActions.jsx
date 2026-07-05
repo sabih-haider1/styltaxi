@@ -47,7 +47,7 @@ export default function FloatingActions() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 to="/book"
-                className="relative flex items-center gap-2.5 rounded-full bg-brand-600 py-3.5 pl-4 pr-6 font-display text-sm font-bold text-white shadow-glow transition-colors hover:bg-brand-700"
+                className="relative flex items-center gap-2.5 rounded-full bg-brand-700 py-3.5 pl-4 pr-6 font-display text-sm font-bold text-white shadow-glow transition-colors hover:bg-brand-800"
               >
                 <IconCar className="h-5 w-5" />
                 {t('common.bookNow')}

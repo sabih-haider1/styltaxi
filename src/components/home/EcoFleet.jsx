@@ -18,7 +18,7 @@ export default function EcoFleet() {
         {/* Copy + points */}
         <div>
           <Reveal>
-            <span className="mb-5 inline-flex items-center gap-2 rounded-full bg-brand-600 px-4 py-2 font-display text-xs font-bold uppercase tracking-[0.18em] text-white">
+            <span className="mb-5 inline-flex items-center gap-2 rounded-full bg-brand-700 px-4 py-2 font-display text-xs font-bold uppercase tracking-[0.18em] text-white">
               <IconLeaf className="h-4 w-4" />
               {t('eco.eyebrow')}
             </span>

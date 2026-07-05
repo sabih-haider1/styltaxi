@@ -18,7 +18,7 @@ export default function ServiceCard({ service }) {
       transition={{ type: 'spring', stiffness: 280, damping: 24 }}
       className="group relative overflow-hidden rounded-3xl bg-ink-950 shadow-soft transition-shadow duration-300 hover:shadow-lift"
     >
-      <Link to={service.to} className="block" aria-label={title}>
+      <Link to={service.to} className="block">
         <SmartImage src={service.img} alt="" zoom className="aspect-[4/3]" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/40 to-transparent" aria-hidden />
         <div className="absolute inset-x-0 bottom-0 p-7">

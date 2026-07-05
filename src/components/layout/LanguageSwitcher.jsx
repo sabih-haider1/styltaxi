@@ -27,7 +27,7 @@ export default function LanguageSwitcher({ dark = false }) {
         type="button"
         aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label={t('common.language')}
+        aria-label={`${t('common.language')}: ${current.short}`}
         onClick={() => setOpen((o) => !o)}
         className={`flex cursor-pointer items-center gap-1.5 rounded-full px-3 py-2 font-display text-sm font-semibold transition-colors ${
           dark ? 'text-white/90 hover:bg-white/10' : 'text-ink-700 hover:bg-ink-50'
