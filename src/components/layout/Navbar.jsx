@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
 import LanguageSwitcher from './LanguageSwitcher'
 import Button from '../ui/Button'
-import { IconMenu, IconX, IconPhone, IconLeaf } from '../ui/Icons'
+import { IconMenu, IconX, IconPhone } from '../ui/Icons'
 import { SITE } from '../../lib/site'
 import { EASE } from '../../lib/motion'
 
@@ -64,16 +64,6 @@ export default function Navbar() {
               Styl<span className="text-brand-600">Taxi</span>
             </span>
           </Link>
-          {/* Zero-emissions badge — the eco fleet is the brand's differentiator */}
-          <span
-            title="Cero Emisiones"
-            className={`inline-flex items-center gap-1.5 rounded-full border px-2 py-1 font-display text-[10px] font-bold uppercase tracking-wider transition-colors ${
-              solid ? 'border-brand-200 bg-brand-50 text-brand-700' : 'border-white/20 bg-white/10 text-brand-300'
-            }`}
-          >
-            <IconLeaf className="h-3.5 w-3.5" />
-            <span className="hidden lg:inline">Cero Emisiones</span>
-          </span>
         </div>
 
         <ul className="hidden items-center gap-1 lg:flex">
