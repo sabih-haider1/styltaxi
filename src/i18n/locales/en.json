@@ -1,0 +1,502 @@
+{
+  "common": {
+    "bookNow": "Book Now",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "learnMore": "Learn more",
+    "viewAllServices": "View all services",
+    "from": "from",
+    "back": "Back",
+    "next": "Continue",
+    "submit": "Submit Booking",
+    "sending": "Sending…",
+    "yes": "Yes",
+    "no": "No",
+    "optional": "optional",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "airport": "Airport Transfers",
+    "corporate": "Corporate Travel",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "book": "Book Taxi",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "badge": "Licensed taxi service · Barcelona",
+    "title": "Reliable Taxi Service in Barcelona",
+    "subtitle": "Airport transfers, city rides, business travel and long-distance transport available 24 hours.",
+    "scroll": "Scroll to explore",
+    "point1": "Fixed prices",
+    "point2": "Flight tracking",
+    "point3": "24/7 availability"
+  },
+  "stats": {
+    "title": "Trusted across Barcelona",
+    "years": "Years of experience",
+    "rides": "Completed journeys",
+    "clients": "Corporate clients",
+    "rating": "Average rating"
+  },
+  "why": {
+    "title": "Why Choose StylTaxi",
+    "subtitle": "Every detail of your journey handled with professional care — that is our standard, not an extra.",
+    "items": [
+      { "title": "Professional Drivers", "text": "Licensed, experienced and courteous drivers who know Barcelona inside out." },
+      { "title": "Always On Time", "text": "We monitor traffic and your flight in real time, so we are there before you are." },
+      { "title": "Airport Transfers", "text": "Meet & greet at arrivals, flight tracking and free waiting time included." },
+      { "title": "24/7 Service", "text": "Day or night, weekends and holidays — we are one call away, every day of the year." },
+      { "title": "Fixed Pricing", "text": "The price we quote is the price you pay. No meters running, no surprises." },
+      { "title": "Safe Journey", "text": "Fully insured, impeccably maintained vehicles and a spotless safety record." }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Premium transport for every occasion",
+    "intro": "From the airport runway to the boardroom door — one company, one standard of excellence.",
+    "items": {
+      "airport": {
+        "title": "Airport Transfers",
+        "desc": "Punctual pickups and drop-offs at Barcelona–El Prat, Girona and Reus, with flight monitoring and meet & greet."
+      },
+      "hotel": {
+        "title": "Hotel Transfers",
+        "desc": "Seamless door-to-door rides between your hotel and any destination in the city, luggage handled with care."
+      },
+      "corporate": {
+        "title": "Corporate Travel",
+        "desc": "Discreet, reliable transport for executives and teams, with monthly invoicing and priority booking."
+      },
+      "city": {
+        "title": "City Taxi",
+        "desc": "Fast, comfortable rides across Barcelona whenever you need them — hail us by phone, WhatsApp or online."
+      },
+      "longdistance": {
+        "title": "Long Distance",
+        "desc": "Fixed-price intercity travel to Madrid, Valencia, the Costa Brava and anywhere in Spain or southern France."
+      },
+      "events": {
+        "title": "Special Events",
+        "desc": "Weddings, congresses, cruises and nights out — coordinated transport that arrives in style."
+      }
+    }
+  },
+  "fleet": {
+    "title": "A fleet that makes an impression",
+    "subtitle": "Immaculate vehicles for every group size and occasion.",
+    "cars": [
+      { "name": "Executive Sedan", "desc": "Mercedes E-Class or similar", "pax": "Up to 3 passengers", "bags": "3 suitcases" },
+      { "name": "Business Van", "desc": "Mercedes V-Class or similar", "pax": "Up to 7 passengers", "bags": "7 suitcases" },
+      { "name": "Standard Taxi", "desc": "Comfortable city vehicle", "pax": "Up to 4 passengers", "bags": "2 suitcases" }
+    ]
+  },
+  "how": {
+    "title": "Booking made effortless",
+    "subtitle": "Three simple steps between you and a confirmed ride.",
+    "steps": [
+      { "title": "Tell us your journey", "text": "Choose pickup, destination, date and time in our booking form." },
+      { "title": "Get instant confirmation", "text": "We confirm your driver and fixed price by email within minutes." },
+      { "title": "Travel in comfort", "text": "Your driver arrives early, tracks your flight and takes care of the rest." }
+    ]
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "Thousands of journeys, one consistent experience.",
+    "items": [
+      {
+        "quote": "Flawless airport pickup at 5 a.m. The driver was waiting with a name sign, helped with our bags and the price was exactly as quoted.",
+        "name": "Laura Martínez",
+        "role": "Frequent flyer, Barcelona"
+      },
+      {
+        "quote": "We use StylTaxi for all our executive visits. In two years they have never been late. That reliability is priceless for our company.",
+        "name": "James Whitfield",
+        "role": "Operations Director, tech company"
+      },
+      {
+        "quote": "Vam reservar per al casament de la nostra filla. Cotxes impecables, conductors elegants i puntualitat absoluta. Totalment recomanable.",
+        "name": "Montserrat Puig",
+        "role": "Special events client"
+      }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Your driver is one click away",
+    "text": "Book in under two minutes. Fixed price, instant confirmation, zero stress.",
+    "button": "Book your transfer"
+  },
+  "booking": {
+    "title": "Book Your Taxi",
+    "subtitle": "Fixed prices, instant confirmation, no payment required today.",
+    "steps": { "journey": "Journey", "passenger": "Passenger", "confirm": "Confirmation" },
+    "stepOf": "Step {{current}} of {{total}}",
+    "journey": {
+      "title": "Where are we taking you?",
+      "pickup": "Pickup location",
+      "pickupPlaceholder": "e.g. Barcelona Airport T1",
+      "destination": "Destination",
+      "destinationPlaceholder": "e.g. Hotel Arts, Barcelona",
+      "date": "Pickup date",
+      "time": "Pickup time",
+      "passengers": "Passengers",
+      "luggage": "Luggage",
+      "luggageItem": "{{count}} suitcase",
+      "luggageItem_other": "{{count}} suitcases",
+      "roundTrip": "Round trip",
+      "roundTripHint": "We will pick you up for the return journey too",
+      "returnDate": "Return date",
+      "returnTime": "Return time",
+      "flightNumber": "Flight number",
+      "flightPlaceholder": "e.g. VY 8301",
+      "terminal": "Terminal",
+      "terminalPlaceholder": "Select terminal",
+      "airportDetected": "Airport journey detected — we will track your flight for free.",
+      "swap": "Swap pickup and destination"
+    },
+    "passenger": {
+      "title": "Who is travelling?",
+      "fullName": "Full name",
+      "namePlaceholder": "Your full name",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "+34 600 000 000",
+      "phoneHint": "We will send driver details to this number",
+      "emergency": "Emergency contact",
+      "emergencyPlaceholder": "Alternative phone number",
+      "requests": "Special requests",
+      "requestsPlaceholder": "Child seat, wheelchair access, extra stop…"
+    },
+    "confirm": {
+      "title": "Review your booking",
+      "route": "Your route",
+      "distance": "Distance",
+      "duration": "Estimated duration",
+      "mapUnavailable": "Live route preview is unavailable right now — your driver will take the fastest route.",
+      "summary": "Booking summary",
+      "journey": "Journey",
+      "outbound": "Outbound",
+      "return": "Return",
+      "passengerDetails": "Passenger",
+      "contactDetails": "Contact",
+      "notes": "Notes",
+      "noPayment": "No payment today. Pay the driver by card or cash after your journey.",
+      "terms": "By submitting you accept our terms of service and privacy policy."
+    },
+    "validation": {
+      "pickupRequired": "Please enter a pickup location",
+      "destinationRequired": "Please enter a destination",
+      "dateRequired": "Please choose a pickup date",
+      "datePast": "Pickup date cannot be in the past",
+      "timeRequired": "Please choose a pickup time",
+      "returnDateRequired": "Please choose a return date",
+      "returnTimeRequired": "Please choose a return time",
+      "returnAfter": "Return must be after the pickup",
+      "nameRequired": "Please enter your full name",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "requestsMax": "Please keep requests under 500 characters"
+    },
+    "success": {
+      "title": "Booking request received!",
+      "reference": "Your reference",
+      "text": "Thank you, {{name}}. We have received your booking and will confirm your driver and fixed price by email within minutes.",
+      "note": "Need to change something? Call us or reply to the confirmation email.",
+      "home": "Back to home",
+      "another": "Make another booking"
+    },
+    "error": {
+      "title": "Something went wrong",
+      "text": "Your booking could not be sent. Please try again, or call us directly — we are available 24/7.",
+      "retry": "Try again"
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing",
+    "subtitle": "The price we quote is the price you pay. Always.",
+    "perKm": "per km",
+    "tiers": [
+      {
+        "name": "Standard",
+        "desc": "Comfortable city rides",
+        "price": "1.30",
+        "features": ["Up to 4 passengers", "2 suitcases", "City & metro area", "Card & cash payment"]
+      },
+      {
+        "name": "Executive",
+        "desc": "Business-class comfort",
+        "price": "1.80",
+        "features": ["Mercedes E-Class or similar", "Up to 3 passengers", "Bottled water & Wi-Fi", "Meet & greet included"]
+      },
+      {
+        "name": "Van",
+        "desc": "Groups & families",
+        "price": "2.10",
+        "features": ["Up to 7 passengers", "7 suitcases", "Child seats available", "Ideal for cruises & groups"]
+      }
+    ],
+    "popular": "Most popular",
+    "fixedTitle": "Fixed airport routes",
+    "fixedSubtitle": "Guaranteed prices, day and night. Tolls and VAT included.",
+    "routes": [
+      { "from": "Barcelona Airport (T1/T2)", "to": "Barcelona city centre", "price": "39" },
+      { "from": "Barcelona Airport (T1/T2)", "to": "Port of Barcelona (cruises)", "price": "42" },
+      { "from": "Barcelona city centre", "to": "Girona Airport", "price": "135" },
+      { "from": "Barcelona city centre", "to": "Reus Airport", "price": "150" },
+      { "from": "Barcelona city centre", "to": "Sitges", "price": "75" },
+      { "from": "Barcelona city centre", "to": "Costa Brava (Lloret)", "price": "110" }
+    ],
+    "routeFrom": "From",
+    "routeTo": "To",
+    "routePrice": "Fixed price",
+    "note": "Night surcharges never apply to pre-booked fixed routes. For any other destination, request a quote — we will reply within minutes.",
+    "cta": "Get an exact quote"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before you ride with us.",
+    "items": [
+      {
+        "q": "How do I book a taxi?",
+        "a": "You can book online through our booking form in under two minutes, call us directly, or send us a WhatsApp message. You will receive a confirmation email with your driver's details and the fixed price."
+      },
+      {
+        "q": "What happens if my flight is delayed?",
+        "a": "Nothing — that is our job to handle. We track your flight in real time and adjust the pickup automatically. Waiting time after landing is free, and there is never a surcharge for delays."
+      },
+      {
+        "q": "Are your prices really fixed?",
+        "a": "Yes. The price we confirm when you book is final and includes tolls, VAT and luggage. There are no meters, no night surcharges on pre-booked rides, and no surprises."
+      },
+      {
+        "q": "How do I pay?",
+        "a": "You pay the driver after the journey, by card or in cash. Corporate clients can request monthly invoicing. No prepayment is ever required to book."
+      },
+      {
+        "q": "Do you provide child seats?",
+        "a": "Yes, free of charge. Just mention the age of your child in the special requests field when booking, and we will install the appropriate seat before pickup."
+      },
+      {
+        "q": "Where will my driver meet me at the airport?",
+        "a": "Your driver waits in the arrivals hall with a sign showing your name, right after baggage claim. Exact meeting details are included in your confirmation email."
+      },
+      {
+        "q": "Can I cancel or change my booking?",
+        "a": "Yes. Cancellations are free up to 12 hours before pickup, and changes are free at any time subject to availability. Just call us or reply to your confirmation email."
+      },
+      {
+        "q": "Do you cover long-distance journeys?",
+        "a": "Absolutely. We regularly drive to Madrid, Valencia, the Costa Brava, Andorra and southern France, always at a fixed price agreed before departure."
+      }
+    ]
+  },
+  "about": {
+    "title": "About StylTaxi",
+    "subtitle": "A Barcelona taxi company built on punctuality, discretion and care.",
+    "storyTitle": "Driven by a simple idea",
+    "story1": "StylTaxi was born in Barcelona with one conviction: a taxi ride should be the easiest part of your day. What began as a small family operation has grown into a trusted transfer service for travellers, families and companies across Catalonia.",
+    "story2": "Every driver in our team is licensed, locally experienced and personally vetted. Every vehicle is inspected, insured and impeccably clean. And every booking — from a five-minute city hop to a cross-country transfer — receives the same attention to detail.",
+    "story3": "We are proudly local. We know the shortcut when the Ronda is jammed, the best hour to reach El Prat, and the exact door of every terminal, port and hotel in the city.",
+    "valuesTitle": "What we stand for",
+    "values": [
+      { "title": "Punctuality", "text": "We plan every pickup with margin, monitor traffic live, and arrive early — every single time." },
+      { "title": "Transparency", "text": "Fixed prices agreed upfront. What we quote is what you pay, with tolls and VAT included." },
+      { "title": "Care", "text": "From child seats to a hand with your luggage, the small details are the heart of our service." }
+    ],
+    "ctaTitle": "Experience the difference",
+    "ctaText": "Join thousands of passengers who never worry about transport in Barcelona."
+  },
+  "airportPage": {
+    "title": "Barcelona Airport Transfers",
+    "subtitle": "Meet & greet at arrivals, live flight tracking and fixed prices to and from El Prat, Girona and Reus.",
+    "benefitsTitle": "Airport pickups, perfected",
+    "benefits": [
+      { "title": "Flight monitoring", "text": "We track your flight and adjust the pickup automatically. Delays never cost you a cent." },
+      { "title": "Meet & greet", "text": "Your driver waits at arrivals with a name sign and helps with your luggage." },
+      { "title": "Free waiting time", "text": "45 minutes of free waiting after landing — time to clear passport control calmly." },
+      { "title": "Fixed prices", "text": "Airport routes at guaranteed prices, tolls and VAT included. Day and night." }
+    ],
+    "terminalsTitle": "We know every terminal",
+    "terminals": [
+      { "name": "Barcelona–El Prat (BCN)", "text": "T1 and T2, 24/7. Around 25 minutes to the city centre." },
+      { "name": "Girona–Costa Brava (GRO)", "text": "Fixed-price transfers to Barcelona and Costa Brava resorts." },
+      { "name": "Reus (REU)", "text": "Transfers to Barcelona, Salou, Cambrils and the Costa Daurada." }
+    ],
+    "ctaTitle": "Land relaxed. We are already there.",
+    "ctaText": "Book your airport transfer now and forget about queues, meters and negotiations."
+  },
+  "corporatePage": {
+    "title": "Corporate Travel",
+    "subtitle": "Discreet, punctual executive transport that reflects the standards of your company.",
+    "benefitsTitle": "Your travel department, outsourced",
+    "benefits": [
+      { "title": "Priority booking", "text": "Dedicated line and guaranteed availability for your executives and guests, even at peak times." },
+      { "title": "Monthly invoicing", "text": "One consolidated monthly invoice with full trip reporting. No receipts to chase." },
+      { "title": "Discreet drivers", "text": "Professionally dressed, multilingual drivers who understand confidentiality." },
+      { "title": "Event logistics", "text": "Congresses, roadshows and team offsites — coordinated fleets with a single point of contact." }
+    ],
+    "trustTitle": "Trusted by companies across Barcelona",
+    "trustText": "From startups to multinationals, teams rely on StylTaxi to move executives, clients and candidates without a second thought.",
+    "ctaTitle": "Set up a corporate account",
+    "ctaText": "Tell us about your travel needs and we will prepare a tailored proposal within 24 hours."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We answer around the clock — choose the channel that suits you.",
+    "phone": "Phone",
+    "phoneText": "Available 24 hours, every day",
+    "whatsapp": "WhatsApp",
+    "whatsappText": "Instant answers and bookings",
+    "email": "Email",
+    "emailText": "We reply within the hour",
+    "hours": "Business hours",
+    "hoursValue": "24 hours · 365 days",
+    "hoursText": "Office: Mon–Fri, 9:00–18:00",
+    "formTitle": "Send us a message",
+    "name": "Your name",
+    "message": "Your message",
+    "messagePlaceholder": "How can we help you?",
+    "send": "Send message",
+    "sent": "Message sent! We will get back to you shortly.",
+    "mapTitle": "StylTaxi service area — Barcelona"
+  },
+  "footer": {
+    "tagline": "Premium taxi and airport transfers in Barcelona. Fixed prices, professional drivers, available 24/7.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contact": "Contact",
+    "followUs": "Follow us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "available": "Available 24/7"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: January 2026",
+      "sections": [
+        {
+          "h": "1. Who we are",
+          "p": "StylTaxi (\"we\", \"us\") operates the styltaxi.com website and provides taxi and transfer services in Barcelona, Spain. We are the data controller for the personal information collected through this website."
+        },
+        {
+          "h": "2. Data we collect",
+          "p": "When you make a booking or contact us we collect the details you provide: name, email address, phone number, pickup and destination addresses, travel dates, flight number and any special requests. We do not collect payment card data through this website."
+        },
+        {
+          "h": "3. Why we use your data",
+          "p": "We use your data exclusively to manage your booking, communicate with you about your journey, respond to your enquiries and comply with legal obligations. We do not sell your data or use it for third-party advertising."
+        },
+        {
+          "h": "4. Legal basis",
+          "p": "Processing is based on the performance of the transport contract you request (Art. 6.1.b GDPR) and our legitimate interest in responding to enquiries (Art. 6.1.f GDPR)."
+        },
+        {
+          "h": "5. Retention",
+          "p": "Booking data is kept for the period required by Spanish tax and transport regulations, and enquiry data for a maximum of 12 months, after which it is deleted."
+        },
+        {
+          "h": "6. Your rights",
+          "p": "Under the GDPR you may access, rectify, delete, restrict or object to the processing of your data, and request portability. Contact us at the email address on our contact page. You may also lodge a complaint with the Spanish Data Protection Agency (AEPD)."
+        },
+        {
+          "h": "7. Third parties",
+          "p": "Bookings submitted through this website are delivered to us by email processing providers acting on our instructions. Route previews use Google Maps services, which are subject to Google's own privacy policy."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "updated": "Last updated: January 2026",
+      "sections": [
+        {
+          "h": "1. Service",
+          "p": "StylTaxi provides licensed taxi and private transfer services in Barcelona and throughout Spain. A booking becomes binding when we send you a written confirmation with the agreed price."
+        },
+        {
+          "h": "2. Prices and payment",
+          "p": "Confirmed prices are fixed and include tolls, VAT and standard luggage. Payment is made to the driver after the journey by card or cash, unless corporate invoicing has been agreed."
+        },
+        {
+          "h": "3. Waiting time",
+          "p": "Airport pickups include 45 minutes of free waiting after the actual landing time. Other pickups include 15 minutes. Additional waiting may be charged at the standard hourly rate."
+        },
+        {
+          "h": "4. Cancellations",
+          "p": "Cancellations are free of charge up to 12 hours before the scheduled pickup. Later cancellations or no-shows may be charged up to 100% of the agreed price."
+        },
+        {
+          "h": "5. Passenger obligations",
+          "p": "Passengers must provide accurate booking details, use seat belts, and refrain from behaviour that endangers safety. The driver may refuse transport in case of serious misconduct."
+        },
+        {
+          "h": "6. Liability",
+          "p": "We carry the passenger and luggage insurance required by Spanish law. We are not liable for delays caused by force majeure, extreme weather or traffic conditions beyond our control, though we always do our utmost to avoid them."
+        },
+        {
+          "h": "7. Applicable law",
+          "p": "These terms are governed by Spanish law. Any dispute shall be submitted to the courts of Barcelona, without prejudice to mandatory consumer protection rules."
+        }
+      ]
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "StylTaxi — Premium Taxi & Airport Transfers in Barcelona",
+      "desc": "Reliable premium taxi service in Barcelona. Airport transfers, city rides, business travel and long-distance transport, available 24 hours with fixed prices."
+    },
+    "about": {
+      "title": "About Us — StylTaxi Barcelona",
+      "desc": "Meet StylTaxi: licensed drivers, immaculate vehicles and a decade of punctual journeys across Barcelona and Catalonia."
+    },
+    "services": {
+      "title": "Our Services — StylTaxi Barcelona",
+      "desc": "Airport transfers, hotel transfers, corporate travel, city taxi, long-distance and event transport in Barcelona. Fixed prices, 24/7."
+    },
+    "airport": {
+      "title": "Barcelona Airport Transfers — StylTaxi",
+      "desc": "Fixed-price transfers to and from Barcelona–El Prat, Girona and Reus airports. Flight tracking, meet & greet and free waiting time."
+    },
+    "corporate": {
+      "title": "Corporate Travel — StylTaxi Barcelona",
+      "desc": "Executive taxi service for companies in Barcelona: priority booking, monthly invoicing, discreet multilingual drivers."
+    },
+    "pricing": {
+      "title": "Pricing — StylTaxi Barcelona",
+      "desc": "Transparent fixed prices for taxi and airport transfers in Barcelona. Tolls and VAT included, no surprises."
+    },
+    "faq": {
+      "title": "FAQ — StylTaxi Barcelona",
+      "desc": "Answers about bookings, fixed prices, flight delays, child seats, payments and cancellations at StylTaxi Barcelona."
+    },
+    "contact": {
+      "title": "Contact — StylTaxi Barcelona",
+      "desc": "Contact StylTaxi by phone, WhatsApp or email. Available 24 hours for bookings and quotes in Barcelona."
+    },
+    "book": {
+      "title": "Book Your Taxi — StylTaxi Barcelona",
+      "desc": "Book your Barcelona taxi or airport transfer online in under two minutes. Fixed price and instant confirmation."
+    },
+    "privacy": {
+      "title": "Privacy Policy — StylTaxi",
+      "desc": "How StylTaxi collects, uses and protects your personal data."
+    },
+    "terms": {
+      "title": "Terms of Service — StylTaxi",
+      "desc": "The terms governing bookings and journeys with StylTaxi Barcelona."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for took a different route. Let us drive you back home.",
+    "button": "Back to home"
+  }
+}
