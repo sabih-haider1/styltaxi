@@ -73,7 +73,7 @@ export default async function handler(req, res) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: \`StylTaxi Bookings <\${fromEmail}>\`,
+      from: `StylTaxi Bookings <${fromEmail}>`,
       to: [toEmail],
       replyTo: payload.email, // So they can hit "Reply" and email the customer back directly!
       subject: subject,
