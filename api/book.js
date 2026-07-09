@@ -9,7 +9,7 @@
  *   BOOKING_EMAIL  — The destination address (e.g. arslan_ali_javed@yahoo.com)
  */
 
-const { Resend } = require('resend')
+import { Resend } from 'resend'
 
 export default async function handler(req, res) {
   // Only accept POST
