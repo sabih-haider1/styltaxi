@@ -50,17 +50,27 @@ export default async function handler(req, res) {
       }
     )
 
-    const body = await upstream.json()
+    // Try to parse JSON, but fall back to text if FormSubmit returns an HTML error page
+    const contentType = upstream.headers.get('content-type') || ''
+    let body = {}
+    let rawText = ''
+    
+    if (contentType.includes('application/json')) {
+      body = await upstream.json()
+    } else {
+      rawText = await upstream.text()
+      console.error('[api/book] FormSubmit returned non-JSON:', rawText.slice(0, 200))
+    }
 
     // FormSubmit returns success:"false" for both the one-time activation
     // notice and genuine errors. Only treat it as an error if the message
     // doesn't mention activation.
     const failed =
-      String(body.success) === 'false' && !/activat/i.test(body.message || '')
+      body && String(body.success) === 'false' && !/activat/i.test(body.message || '')
 
-    if (!upstream.ok || failed) {
-      console.error('[api/book] FormSubmit rejected:', body)
-      return res.status(502).json({ error: body.message || 'Delivery rejected' })
+    if (!upstream.ok || failed || !contentType.includes('application/json')) {
+      console.error('[api/book] FormSubmit rejected:', body || rawText)
+      return res.status(502).json({ error: body?.message || 'Delivery rejected (Captcha or Block)' })
     }
 
     return res.status(200).json({ ok: true })
