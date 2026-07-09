@@ -21,9 +21,14 @@ export default async function handler(req, res) {
   const fromEmail = process.env.RESEND_FROM
   const toEmail = process.env.BOOKING_EMAIL
 
-  if (!apiKey || !fromEmail || !toEmail) {
-    console.error('[api/book] Missing Resend environment variables')
-    return res.status(500).json({ error: 'Server misconfiguration: Missing API keys' })
+  const missing = []
+  if (!apiKey) missing.push('RESEND_API_KEY')
+  if (!fromEmail) missing.push('RESEND_FROM')
+  if (!toEmail) missing.push('BOOKING_EMAIL')
+
+  if (missing.length > 0) {
+    console.error('[api/book] Missing environment variables:', missing.join(', '))
+    return res.status(500).json({ error: `Server misconfiguration: Missing ${missing.join(', ')}` })
   }
 
   const resend = new Resend(apiKey)
