@@ -8,17 +8,6 @@
  * still be demonstrated end to end.
  */
 export async function deliverForm(subject, data) {
-  // Local preview fallback — only triggered when VITE_BOOKING_EMAIL is unset.
-  // In production the server-side BOOKING_EMAIL env var is used instead.
-  if (
-    !import.meta.env.VITE_BOOKING_EMAIL ||
-    import.meta.env.VITE_BOOKING_EMAIL.endsWith('.example')
-  ) {
-    console.warn('[StylTaxi] No booking email configured — simulating delivery.', data)
-    await new Promise((r) => setTimeout(r, 900))
-    return { simulated: true }
-  }
-
   const res = await fetch('/api/book', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
