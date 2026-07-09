@@ -1,17 +1,15 @@
 /**
  * Vercel serverless function — POST /api/book
  *
- * Receives the booking payload from the browser and forwards it to
- * FormSubmit on the server side. Server-to-server calls are never
- * subject to CORS, so this completely bypasses the CORS block that
- * happens when the browser tries to call FormSubmit directly.
+ * Receives the booking payload from the browser and sends it via Resend.
  *
- * Environment variable required (set in Vercel project settings):
- *   BOOKING_EMAIL  — the delivery address (e.g. arslan_ali_javed@yahoo.com)
- *
- * Note: Vercel serverless functions use CommonJS by default (no "type":"module"
- * in the api/ directory), so we use require() here.
+ * Environment variables required (set in Vercel project settings):
+ *   RESEND_API_KEY — The API key generated in the Resend dashboard
+ *   RESEND_FROM    — The verified domain address (e.g. bookings@styltaxi.com)
+ *   BOOKING_EMAIL  — The destination address (e.g. arslan_ali_javed@yahoo.com)
  */
+
+const { Resend } = require('resend')
 
 export default async function handler(req, res) {
   // Only accept POST
@@ -19,63 +17,77 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const email = process.env.BOOKING_EMAIL
-  if (!email) {
-    console.error('[api/book] BOOKING_EMAIL env var is not set')
-    return res.status(500).json({ error: 'Server misconfiguration' })
+  const apiKey = process.env.RESEND_API_KEY
+  const fromEmail = process.env.RESEND_FROM
+  const toEmail = process.env.BOOKING_EMAIL
+
+  if (!apiKey || !fromEmail || !toEmail) {
+    console.error('[api/book] Missing Resend environment variables')
+    return res.status(500).json({ error: 'Server misconfiguration: Missing API keys' })
   }
+
+  const resend = new Resend(apiKey)
 
   let payload
   try {
-    // Vercel automatically parses JSON bodies when Content-Type is application/json
     payload = typeof req.body === 'string' ? JSON.parse(req.body) : req.body
   } catch {
     return res.status(400).json({ error: 'Invalid JSON body' })
   }
 
+  // Extract the subject, then remove it and other internal keys from the payload
+  const subject = payload._subject || 'New Passenger Booking'
+  delete payload._subject
+  delete payload._template
+  delete payload._captcha
+
+  // Generate a clean HTML table for the email body (replicating FormSubmit's table template)
+  const rows = Object.entries(payload)
+    .filter(([_, value]) => value !== undefined && value !== null && value !== '')
+    .map(([key, value]) => {
+      // Capitalize the key (e.g. "fullName" -> "Full Name")
+      const label = key
+        .replace(/([A-Z])/g, ' $1')
+        .replace(/^./, (str) => str.toUpperCase())
+      
+      return `
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #e5e7eb; font-family: sans-serif; font-weight: bold; color: #374151; width: 30%;">${label}</td>
+          <td style="padding: 12px; border-bottom: 1px solid #e5e7eb; font-family: sans-serif; color: #111827;">${value}</td>
+        </tr>
+      `
+    })
+    .join('')
+
+  const html = `
+    <div style="max-width: 600px; margin: 0 auto; font-family: sans-serif;">
+      <h2 style="color: #056438; margin-bottom: 24px;">${subject}</h2>
+      <table style="width: 100%; border-collapse: collapse; text-align: left; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden;">
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+      <p style="color: #6b7280; font-size: 12px; margin-top: 24px;">Sent via StylTaxi Website</p>
+    </div>
+  `
+
   try {
-    const upstream = await fetch(
-      `https://formsubmit.co/ajax/${encodeURIComponent(email)}`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          _template: 'table',
-          _captcha: 'false',
-          ...payload,
-        }),
-      }
-    )
+    const { data, error } = await resend.emails.send({
+      from: \`StylTaxi Bookings <\${fromEmail}>\`,
+      to: [toEmail],
+      replyTo: payload.email, // So they can hit "Reply" and email the customer back directly!
+      subject: subject,
+      html: html,
+    })
 
-    // Try to parse JSON, but fall back to text if FormSubmit returns an HTML error page
-    const contentType = upstream.headers.get('content-type') || ''
-    let body = {}
-    let rawText = ''
-    
-    if (contentType.includes('application/json')) {
-      body = await upstream.json()
-    } else {
-      rawText = await upstream.text()
-      console.error('[api/book] FormSubmit returned non-JSON:', rawText.slice(0, 200))
+    if (error) {
+      console.error('[api/book] Resend API error:', error)
+      return res.status(502).json({ error: error.message || 'Email delivery failed' })
     }
 
-    // FormSubmit returns success:"false" for both the one-time activation
-    // notice and genuine errors. Only treat it as an error if the message
-    // doesn't mention activation.
-    const failed =
-      body && String(body.success) === 'false' && !/activat/i.test(body.message || '')
-
-    if (!upstream.ok || failed || !contentType.includes('application/json')) {
-      console.error('[api/book] FormSubmit rejected:', body || rawText)
-      return res.status(502).json({ error: body?.message || 'Delivery rejected (Captcha or Block)' })
-    }
-
-    return res.status(200).json({ ok: true })
+    return res.status(200).json({ ok: true, id: data?.id })
   } catch (err) {
-    console.error('[api/book] Upstream fetch failed:', err)
-    return res.status(502).json({ error: 'Could not reach delivery service' })
+    console.error('[api/book] Resend crash:', err)
+    return res.status(500).json({ error: 'Internal server error while sending email' })
   }
 }
