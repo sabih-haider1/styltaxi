@@ -59,7 +59,7 @@
     ]
   },
   "services": {
-    "title": "Trasllats des de Sabadell i Sant Quirze a on necessitis anar.",
+    "title": "Trasllats des de Sabadell i Sant Quirze a on vostè necessiti.",
     "subtitle": "Transport premium per a cada ocasió",
     "intro": "De la pista de l'aeroport a la porta de la teva reunió: una sola empresa, un sol estàndard d'excel·lència.",
     "items": {
@@ -260,9 +260,10 @@
       }
     ],
     "popular": "Més popular",
-    "airportFareTitle": "Tarifa d'Aeroport",
-    "airportFareSubtitle": "Preu fix des de Sabadell i Sant Quirze.",
-    "airportFareDescription": "Et portem a l'aeroport i també et recollim a l'aeroport per 80 €.",
+    "fixedTitle": "Tarifa aeroport",
+    "fixedSubtitle": "Preu fix des de Sabadell i Sant Quirze.",
+    "fareText": "Et portem i també et podem recollir a l'aeroport: 80€",
+    "note": "Els suplements nocturns mai no s'apliquen a rutes fixes reservades amb antelació. Per a qualsevol altra destinació, demana pressupost: responem en minuts.",
     "cta": "Demanar pressupost exacte"
   },
   "faq": {
@@ -329,12 +330,9 @@
       { "title": "Espera gratuïta", "text": "45 minuts d'espera gratuïta després de l'aterratge: temps per passar el control amb calma." },
       { "title": "Preus fixos", "text": "Rutes d'aeroport a preus garantits, amb peatges i IVA inclosos. De dia i de nit." }
     ],
-    "terminalsTitle": "Coneixem cada terminal",
-    "terminals": [
-      { "name": "Barcelona–El Prat (BCN)", "text": "T1 i T2, 24/7. Uns 25 minuts fins al centre de la ciutat." },
-      { "name": "Girona–Costa Brava (GRO)", "text": "Trasllats a preu fix a Barcelona i a les destinacions de la Costa Brava." },
-      { "name": "Reus (REU)", "text": "Trasllats a Barcelona, Salou, Cambrils i la Costa Daurada." }
-    ],
+    "fareTitle": "Tarifa aeroport",
+    "fareSubtitle": "Preu fix des de Sabadell i Sant Quirze.",
+    "fareText": "Et portem i també et podem recollir a l'aeroport: 80€",
     "ctaTitle": "Aterra tranquil. Ja hi som.",
     "ctaText": "Reserva el teu trasllat a l'aeroport i oblida't de cues, taxímetres i negociacions."
   },
@@ -467,12 +465,12 @@
   },
   "seo": {
     "home": {
-      "title": "StylTaxi — Taxi Premium i Trasllats a l'Aeroport a Barcelona",
-      "desc": "Servei de taxi premium i fiable a Barcelona. Trasllats a l'aeroport, trajectes urbans, viatges de negocis i llarga distància, 24 hores amb preus fixos."
+      "title": "StylTaxi — Taxi Sabadell i Sant Quirze del Vallès",
+      "desc": "Servei de taxi premium a Sabadell i Sant Quirze del Vallès. Trasllats a l'aeroport, trajectes urbans, viatges de negocis i llarga distància, 24 hores amb preus fixos."
     },
     "about": {
-      "title": "Nosaltres — StylTaxi Barcelona",
-      "desc": "Coneix StylTaxi: conductors amb llicència, vehicles impecables i una dècada de trajectes puntuals per Barcelona i Catalunya."
+      "title": "Nosaltres — StylTaxi Vallès",
+      "desc": "Coneix StylTaxi: conductors amb llicència, vehicles impecables i trajectes puntuals des de Sabadell i Sant Quirze a tot Catalunya."
     },
     "services": {
       "title": "Serveis — StylTaxi Barcelona",

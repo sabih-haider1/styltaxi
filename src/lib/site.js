@@ -6,7 +6,7 @@ export const SITE = {
   whatsappHref: `https://wa.me/${import.meta.env.VITE_WHATSAPP || '34931776000'}`,
   // Shown publicly on the site; bookings are delivered to VITE_BOOKING_EMAIL.
   email: import.meta.env.VITE_PUBLIC_EMAIL || 'styltaxisabadell@gmail.com',
-  city: 'Sabadell',
+  city: 'Barcelona',
   country: 'ES',
   social: {
     instagram: 'https://instagram.com/styltaxi',

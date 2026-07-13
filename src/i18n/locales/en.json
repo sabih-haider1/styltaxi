@@ -260,9 +260,10 @@
       }
     ],
     "popular": "Most popular",
-    "airportFareTitle": "Airport Fare",
-    "airportFareSubtitle": "Fixed price from Sabadell and Sant Quirze.",
-    "airportFareDescription": "We can take you to the airport and also pick you up from the airport for €80.",
+    "fixedTitle": "Airport Fare",
+    "fixedSubtitle": "Fixed price from Sabadell and Sant Quirze.",
+    "fareText": "We can take you to the airport and also pick you up from the airport for €80.",
+    "note": "Night surcharges never apply to pre-booked fixed routes. For any other destination, request a quote — we will reply within minutes.",
     "cta": "Get an exact quote"
   },
   "faq": {
@@ -329,12 +330,9 @@
       { "title": "Free waiting time", "text": "45 minutes of free waiting after landing — time to clear passport control calmly." },
       { "title": "Fixed prices", "text": "Airport routes at guaranteed prices, tolls and VAT included. Day and night." }
     ],
-    "terminalsTitle": "We know every terminal",
-    "terminals": [
-      { "name": "Barcelona–El Prat (BCN)", "text": "T1 and T2, 24/7. Around 25 minutes to the city centre." },
-      { "name": "Girona–Costa Brava (GRO)", "text": "Fixed-price transfers to Barcelona and Costa Brava resorts." },
-      { "name": "Reus (REU)", "text": "Transfers to Barcelona, Salou, Cambrils and the Costa Daurada." }
-    ],
+    "fareTitle": "Airport Fare",
+    "fareSubtitle": "Fixed price from Sabadell and Sant Quirze.",
+    "fareText": "We can take you to the airport and also pick you up from the airport for €80.",
     "ctaTitle": "Land relaxed. We are already there.",
     "ctaText": "Book your airport transfer now and forget about queues, meters and negotiations."
   },
@@ -467,8 +465,8 @@
   },
   "seo": {
     "home": {
-      "title": "StylTaxi — Premium Taxi & Airport Transfers in Barcelona",
-      "desc": "Reliable premium taxi service in Barcelona. Airport transfers, city rides, business travel and long-distance transport, available 24 hours with fixed prices."
+      "title": "StylTaxi — Taxi Sabadell and Sant Quirze del Vallès",
+      "desc": "Premium taxi service in Sabadell and Sant Quirze del Vallès. Airport transfers, city rides, business travel and long-distance transport, available 24 hours with fixed prices."
     },
     "about": {
       "title": "About Us — StylTaxi Barcelona",
