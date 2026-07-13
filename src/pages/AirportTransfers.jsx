@@ -51,6 +51,16 @@ export default function AirportTransfers() {
         </div>
       </section>
 
+      <section className="bg-ink-950 py-24 md:py-32">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <SectionHeading dark title={t('airportPage.fareTitle')} subtitle={t('airportPage.fareSubtitle')} />
+          <Reveal className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-8 md:p-12 backdrop-blur-sm shadow-lift text-center">
+            <p className="font-display text-xl md:text-2xl font-semibold leading-relaxed text-white">
+              {t('airportPage.fareText')}
+            </p>
+          </Reveal>
+        </div>
+      </section>
 
       <section className="bg-white py-24 text-center md:py-28">
         <Reveal className="mx-auto max-w-2xl px-4">
