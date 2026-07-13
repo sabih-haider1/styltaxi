@@ -31,7 +31,7 @@
   },
   "hero": {
     "badge": "Servei de taxi amb llicència · Barcelona",
-    "title": "Servei de Taxi Fiable a Barcelona",
+    "title": "Taxi Sabadell i Sant Quirze del Vallès",
     "subtitle": "Trasllats a l'aeroport, trajectes urbans, viatges de negocis i llarga distància, disponibles les 24 hores.",
     "scroll": "Desplaça't per descobrir",
     "point1": "Preus fixos",
@@ -59,7 +59,7 @@
     ]
   },
   "services": {
-    "title": "Els Nostres Serveis",
+    "title": "Trasllats des de Sabadell i Sant Quirze a on necessitis anar.",
     "subtitle": "Transport premium per a cada ocasió",
     "intro": "De la pista de l'aeroport a la porta de la teva reunió: una sola empresa, un sol estàndard d'excel·lència.",
     "items": {
@@ -260,20 +260,9 @@
       }
     ],
     "popular": "Més popular",
-    "fixedTitle": "Rutes fixes d'aeroport",
-    "fixedSubtitle": "Preus garantits, de dia i de nit. Peatges i IVA inclosos.",
-    "routes": [
-      { "from": "Aeroport de Barcelona (T1/T2)", "to": "Centre de Barcelona", "price": "39" },
-      { "from": "Aeroport de Barcelona (T1/T2)", "to": "Port de Barcelona (creuers)", "price": "42" },
-      { "from": "Centre de Barcelona", "to": "Aeroport de Girona", "price": "135" },
-      { "from": "Centre de Barcelona", "to": "Aeroport de Reus", "price": "150" },
-      { "from": "Centre de Barcelona", "to": "Sitges", "price": "75" },
-      { "from": "Centre de Barcelona", "to": "Costa Brava (Lloret)", "price": "110" }
-    ],
-    "routeFrom": "Origen",
-    "routeTo": "Destinació",
-    "routePrice": "Preu fix",
-    "note": "Els suplements nocturns mai no s'apliquen a rutes fixes reservades amb antelació. Per a qualsevol altra destinació, demana pressupost: responem en minuts.",
+    "airportFareTitle": "Tarifa d'Aeroport",
+    "airportFareSubtitle": "Preu fix des de Sabadell i Sant Quirze.",
+    "airportFareDescription": "Et portem a l'aeroport i també et recollim a l'aeroport per 80 €.",
     "cta": "Demanar pressupost exacte"
   },
   "faq": {

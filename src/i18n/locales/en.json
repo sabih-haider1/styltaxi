@@ -31,7 +31,7 @@
   },
   "hero": {
     "badge": "Licensed taxi service · Barcelona",
-    "title": "Reliable Taxi Service in Barcelona",
+    "title": "Taxi Sabadell and Sant Quirze del Vallès",
     "subtitle": "Airport transfers, city rides, business travel and long-distance transport available 24 hours.",
     "scroll": "Scroll to explore",
     "point1": "Fixed prices",
@@ -59,7 +59,7 @@
     ]
   },
   "services": {
-    "title": "Our Services",
+    "title": "Transfers from Sabadell and Sant Quirze to wherever you need to go.",
     "subtitle": "Premium transport for every occasion",
     "intro": "From the airport runway to the boardroom door — one company, one standard of excellence.",
     "items": {
@@ -260,20 +260,9 @@
       }
     ],
     "popular": "Most popular",
-    "fixedTitle": "Fixed airport routes",
-    "fixedSubtitle": "Guaranteed prices, day and night. Tolls and VAT included.",
-    "routes": [
-      { "from": "Barcelona Airport (T1/T2)", "to": "Barcelona city centre", "price": "39" },
-      { "from": "Barcelona Airport (T1/T2)", "to": "Port of Barcelona (cruises)", "price": "42" },
-      { "from": "Barcelona city centre", "to": "Girona Airport", "price": "135" },
-      { "from": "Barcelona city centre", "to": "Reus Airport", "price": "150" },
-      { "from": "Barcelona city centre", "to": "Sitges", "price": "75" },
-      { "from": "Barcelona city centre", "to": "Costa Brava (Lloret)", "price": "110" }
-    ],
-    "routeFrom": "From",
-    "routeTo": "To",
-    "routePrice": "Fixed price",
-    "note": "Night surcharges never apply to pre-booked fixed routes. For any other destination, request a quote — we will reply within minutes.",
+    "airportFareTitle": "Airport Fare",
+    "airportFareSubtitle": "Fixed price from Sabadell and Sant Quirze.",
+    "airportFareDescription": "We can take you to the airport and also pick you up from the airport for €80.",
     "cta": "Get an exact quote"
   },
   "faq": {

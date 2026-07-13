@@ -7,12 +7,11 @@ import SectionHeading from '../components/ui/SectionHeading'
 import Reveal from '../components/ui/Reveal'
 import Button from '../components/ui/Button'
 import { fadeUp, stagger } from '../lib/motion'
-import { IconCheck, IconArrowRight } from '../components/ui/Icons'
+import { IconCheck } from '../components/ui/Icons'
 
 export default function Pricing() {
   const { t } = useTranslation()
   const tiers = t('pricing.tiers', { returnObjects: true })
-  const routes = t('pricing.routes', { returnObjects: true })
 
   return (
     <PageWrap>
@@ -84,44 +83,24 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* Fixed routes */}
+      {/* Airport Fare */}
       <section className="bg-ink-50/60 py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t('pricing.fixedTitle')} subtitle={t('pricing.fixedSubtitle')} />
-          <Reveal className="overflow-hidden rounded-3xl border border-ink-100 bg-white shadow-soft">
-            <table className="w-full text-left text-sm">
-              <thead>
-                <tr className="border-b border-ink-100 bg-ink-50/70 font-display text-xs uppercase tracking-[0.14em] text-ink-400">
-                  <th scope="col" className="px-6 py-4 md:px-8">{t('pricing.routeFrom')}</th>
-                  <th scope="col" className="hidden px-6 py-4 sm:table-cell md:px-8">{t('pricing.routeTo')}</th>
-                  <th scope="col" className="px-6 py-4 text-right md:px-8">{t('pricing.routePrice')}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-ink-50">
-                {routes.map((route, i) => (
-                  <tr key={i} className="group transition-colors hover:bg-brand-50/50">
-                    <td className="px-6 py-4.5 font-medium text-ink-900 md:px-8">
-                      {route.from}
-                      <span className="mt-0.5 flex items-center gap-1.5 text-xs text-ink-400 sm:hidden">
-                        <IconArrowRight className="h-3 w-3" />
-                        {route.to}
-                      </span>
-                    </td>
-                    <td className="hidden px-6 py-4.5 text-ink-600 sm:table-cell md:px-8">{route.to}</td>
-                    <td className="px-6 py-4.5 text-right md:px-8">
-                      <span className="font-display text-lg font-bold text-brand-700">{route.price}€</span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </Reveal>
-          <Reveal className="mt-10 text-center">
-            <p className="mx-auto max-w-xl text-balance text-sm leading-relaxed text-ink-400">{t('pricing.note')}</p>
-            <div className="mt-7">
-              <Button to="/contact" variant="dark" size="lg">
-                {t('pricing.cta')}
-              </Button>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+          <SectionHeading title={t('pricing.airportFareTitle')} subtitle={t('pricing.airportFareSubtitle')} />
+          <Reveal className="mt-8 rounded-[2rem] border border-gold-500/30 bg-white p-8 md:p-12 shadow-soft hover:border-gold-500/60 transition-colors">
+            <div className="flex flex-col items-center justify-center">
+              <span className="font-display text-7xl font-extrabold text-brand-700">80€</span>
+              <p className="mt-6 text-lg font-medium text-ink-600 max-w-lg leading-relaxed">
+                {t('pricing.airportFareDescription')}
+              </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <Button to="/book" size="lg">
+                  {t('common.bookNow')}
+                </Button>
+                <Button to="/contact" variant="dark" size="lg">
+                  {t('pricing.cta')}
+                </Button>
+              </div>
             </div>
           </Reveal>
         </div>

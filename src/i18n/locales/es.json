@@ -31,7 +31,7 @@
   },
   "hero": {
     "badge": "Servicio de taxi con licencia · Barcelona",
-    "title": "Servicio de Taxi Fiable en Barcelona",
+    "title": "Taxi Sabadell y Sant Quirze del Vallès",
     "subtitle": "Traslados al aeropuerto, trayectos urbanos, viajes de negocios y larga distancia, disponibles las 24 horas.",
     "scroll": "Desliza para descubrir",
     "point1": "Precios fijos",
@@ -59,7 +59,7 @@
     ]
   },
   "services": {
-    "title": "Nuestros Servicios",
+    "title": "Traslados desde Sabadell y Sant Quirze a donde necesites ir.",
     "subtitle": "Transporte premium para cada ocasión",
     "intro": "De la pista del aeropuerto a la puerta de tu reunión: una sola empresa, un solo estándar de excelencia.",
     "items": {
@@ -260,20 +260,9 @@
       }
     ],
     "popular": "Más popular",
-    "fixedTitle": "Rutas fijas de aeropuerto",
-    "fixedSubtitle": "Precios garantizados, de día y de noche. Peajes e IVA incluidos.",
-    "routes": [
-      { "from": "Aeropuerto de Barcelona (T1/T2)", "to": "Centro de Barcelona", "price": "39" },
-      { "from": "Aeropuerto de Barcelona (T1/T2)", "to": "Puerto de Barcelona (cruceros)", "price": "42" },
-      { "from": "Centro de Barcelona", "to": "Aeropuerto de Girona", "price": "135" },
-      { "from": "Centro de Barcelona", "to": "Aeropuerto de Reus", "price": "150" },
-      { "from": "Centro de Barcelona", "to": "Sitges", "price": "75" },
-      { "from": "Centro de Barcelona", "to": "Costa Brava (Lloret)", "price": "110" }
-    ],
-    "routeFrom": "Origen",
-    "routeTo": "Destino",
-    "routePrice": "Precio fijo",
-    "note": "Los suplementos nocturnos nunca se aplican a rutas fijas reservadas con antelación. Para cualquier otro destino, pide presupuesto: respondemos en minutos.",
+    "airportFareTitle": "Tarifa de Aeropuerto",
+    "airportFareSubtitle": "Precio fijo desde Sabadell y Sant Quirze.",
+    "airportFareDescription": "Te llevamos al aeropuerto y también te recogemos en el aeropuerto por 80 €.",
     "cta": "Pedir presupuesto exacto"
   },
   "faq": {
