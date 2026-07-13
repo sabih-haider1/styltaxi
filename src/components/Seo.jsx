@@ -74,10 +74,10 @@ function localBusinessSchema() {
     image: `${SITE.url}/images/og-image.jpg`,
     telephone: SITE.phone,
     priceRange: '€€',
-    areaServed: { '@type': 'City', name: 'Barcelona' },
+    areaServed: { '@type': 'City', name: SITE.city },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Barcelona',
+      addressLocality: SITE.city,
       addressRegion: 'Catalonia',
       addressCountry: 'ES',
     },

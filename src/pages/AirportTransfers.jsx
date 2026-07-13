@@ -14,7 +14,6 @@ const BENEFIT_ICONS = [IconPlane, IconUsers, IconClock, IconEuro]
 export default function AirportTransfers() {
   const { t } = useTranslation()
   const benefits = t('airportPage.benefits', { returnObjects: true })
-  const terminals = t('airportPage.terminals', { returnObjects: true })
 
   return (
     <PageWrap>
@@ -52,30 +51,6 @@ export default function AirportTransfers() {
         </div>
       </section>
 
-      <section className="bg-ink-950 py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeading dark title={t('airportPage.terminalsTitle')} />
-          <motion.div
-            variants={stagger(0.12)}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: '-60px' }}
-            className="grid gap-7 md:grid-cols-3"
-          >
-            {terminals.map((terminal, i) => (
-              <motion.div
-                key={i}
-                variants={fadeUp}
-                className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-colors hover:border-gold-500/40"
-              >
-                <IconPlane className="h-7 w-7 text-gold-500" />
-                <h3 className="mt-5 font-display text-lg font-bold text-white">{terminal.name}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-white/60">{terminal.text}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       <section className="bg-white py-24 text-center md:py-28">
         <Reveal className="mx-auto max-w-2xl px-4">
