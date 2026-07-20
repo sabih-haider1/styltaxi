@@ -65,7 +65,7 @@
     "items": {
       "airport": {
         "title": "Airport Transfers",
-        "desc": "Punctual pickups and drop-offs at Sabadell–El Prat, Girona and Reus, with flight monitoring and meet & greet."
+        "desc": "Punctual pickups and drop-offs at Barcelona–El Prat, Girona and Reus, with flight monitoring and meet & greet."
       },
       "hotel": {
         "title": "Hotel Transfers",
@@ -156,7 +156,7 @@
     "journey": {
       "title": "Where are we taking you?",
       "pickup": "Pickup location",
-      "pickupPlaceholder": "e.g. Sabadell Airport T1",
+      "pickupPlaceholder": "e.g. Barcelona Airport T1",
       "destination": "Destination",
       "destinationPlaceholder": "e.g. Sabadell Centre",
       "date": "Pickup date",
@@ -314,7 +314,7 @@
     "ctaText": "Join thousands of passengers who never worry about transport in Sabadell."
   },
   "airportPage": {
-    "title": "Sabadell Airport Transfers",
+    "title": "Barcelona Airport Transfers",
     "subtitle": "Meet & greet at arrivals, live flight tracking and fixed prices to and from El Prat, Girona and Reus.",
     "benefitsTitle": "Airport pickups, perfected",
     "benefits": [
@@ -470,8 +470,8 @@
       "desc": "Airport transfers, hotel transfers, corporate travel, city taxi, long-distance and event transport in Sabadell. Fixed prices, 24/7."
     },
     "airport": {
-      "title": "Sabadell Airport Transfers — StylTaxi",
-      "desc": "Fixed-price transfers to and from Sabadell–El Prat, Girona and Reus airports. Flight tracking, meet & greet and free waiting time."
+      "title": "Barcelona Airport Transfers — StylTaxi",
+      "desc": "Fixed-price transfers to and from Barcelona–El Prat, Girona and Reus airports. Flight tracking, meet & greet and free waiting time."
     },
     "corporate": {
       "title": "Corporate Travel — StylTaxi Sabadell",
