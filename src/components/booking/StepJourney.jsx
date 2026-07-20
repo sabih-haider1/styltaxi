@@ -134,7 +134,7 @@ export default function StepJourney({ form, airportLeg, onPlaceChange }) {
       <div className="grid gap-6 sm:grid-cols-2">
         <Field label={t(`${b}.passengers`)} htmlFor="passengers">
           <select id="passengers" className={inputCls} {...register('passengers')}>
-            {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+            {[1, 2, 3, 4].map((n) => (
               <option key={n} value={String(n)}>
                 {n}
               </option>
@@ -143,7 +143,7 @@ export default function StepJourney({ form, airportLeg, onPlaceChange }) {
         </Field>
         <Field label={t(`${b}.luggage`)} htmlFor="luggage">
           <select id="luggage" className={inputCls} {...register('luggage')}>
-            {[0, 1, 2, 3, 4, 5, 6, 7].map((n) => (
+            {[0, 1, 2, 3, 4].map((n) => (
               <option key={n} value={String(n)}>
                 {t(`${b}.luggageItem`, { count: n })}
               </option>

@@ -74,10 +74,10 @@ function localBusinessSchema() {
     image: `${SITE.url}/images/og-image.jpg`,
     telephone: SITE.phone,
     priceRange: '€€',
-    areaServed: { '@type': 'City', name: 'Barcelona' },
+    areaServed: { '@type': 'City', name: 'Sabadell' },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Barcelona',
+      addressLocality: 'Sabadell',
       addressRegion: 'Catalonia',
       addressCountry: 'ES',
     },

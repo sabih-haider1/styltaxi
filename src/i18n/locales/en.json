@@ -30,7 +30,7 @@
     "closeMenu": "Close menu"
   },
   "hero": {
-    "badge": "Licensed taxi service · Barcelona",
+    "badge": "Licensed taxi service · Sabadell",
     "title": "Taxi Sabadell and Sant Quirze del Vallès",
     "subtitle": "Airport transfers, city rides, business travel and long-distance transport available 24 hours.",
     "scroll": "Scroll to explore",
@@ -40,7 +40,7 @@
     "point4": "Emission-free / eco"
   },
   "stats": {
-    "title": "Trusted across Barcelona",
+    "title": "Trusted across Sabadell",
     "years": "Years of experience",
     "rides": "Completed journeys",
     "clients": "Corporate clients",
@@ -50,11 +50,11 @@
     "title": "Why Choose StylTaxi",
     "subtitle": "Every detail of your journey handled with professional care — that is our standard, not an extra.",
     "items": [
-      { "title": "Professional Drivers", "text": "Licensed, experienced and courteous drivers who know Barcelona inside out." },
+      { "title": "Professional Drivers", "text": "Licensed, experienced and courteous drivers who know the city inside out." },
       { "title": "Always On Time", "text": "We monitor traffic and your flight in real time, so we are there before you are." },
       { "title": "Airport Transfers", "text": "Meet & greet at arrivals, flight tracking and free waiting time included." },
       { "title": "24/7 Service", "text": "Day or night, weekends and holidays — we are one call away, every day of the year." },
-      { "title": "Fixed Pricing", "text": "The price we quote is the price you pay. No meters running, no surprises." },
+      { "title": "Fixed Pricing", "text": "The price we quote is the price you pay. For airport and pickups." },
       { "title": "Safe Journey", "text": "Fully insured, impeccably maintained vehicles and a spotless safety record." }
     ]
   },
@@ -65,7 +65,7 @@
     "items": {
       "airport": {
         "title": "Airport Transfers",
-        "desc": "Punctual pickups and drop-offs at Barcelona–El Prat, Girona and Reus, with flight monitoring and meet & greet."
+        "desc": "Punctual pickups and drop-offs at Sabadell–El Prat, Girona and Reus, with flight monitoring and meet & greet."
       },
       "hotel": {
         "title": "Hotel Transfers",
@@ -77,7 +77,7 @@
       },
       "city": {
         "title": "City Taxi",
-        "desc": "Fast, comfortable rides across Barcelona whenever you need them — hail us by phone, WhatsApp or online."
+        "desc": "Fast, comfortable rides across Sabadell whenever you need them — hail us by phone, WhatsApp or online."
       },
       "longdistance": {
         "title": "Long Distance",
@@ -94,7 +94,6 @@
     "subtitle": "Immaculate vehicles for every group size and occasion.",
     "cars": [
       { "name": "Executive Sedan", "desc": "Mercedes E-Class or similar", "pax": "Up to 3 passengers", "bags": "3 suitcases" },
-      { "name": "Business Van", "desc": "Mercedes V-Class or similar", "pax": "Up to 7 passengers", "bags": "7 suitcases" },
       { "name": "Standard Taxi", "desc": "Comfortable city vehicle", "pax": "Up to 4 passengers", "bags": "2 suitcases" }
     ]
   },
@@ -130,7 +129,7 @@
       {
         "quote": "Flawless airport pickup at 5 a.m. The driver was waiting with a name sign, helped with our bags and the price was exactly as quoted.",
         "name": "Laura Martínez",
-        "role": "Frequent flyer, Barcelona"
+        "role": "Frequent flyer, Sabadell"
       },
       {
         "quote": "We use StylTaxi for all our executive visits. In two years they have never been late. That reliability is priceless for our company.",
@@ -157,9 +156,9 @@
     "journey": {
       "title": "Where are we taking you?",
       "pickup": "Pickup location",
-      "pickupPlaceholder": "e.g. Barcelona Airport T1",
+      "pickupPlaceholder": "e.g. Sabadell Airport T1",
       "destination": "Destination",
-      "destinationPlaceholder": "e.g. Hotel Arts, Barcelona",
+      "destinationPlaceholder": "e.g. Sabadell Centre",
       "date": "Pickup date",
       "time": "Pickup time",
       "passengers": "Passengers",
@@ -251,12 +250,6 @@
         "desc": "Business-class comfort",
         "price": "1.80",
         "features": ["Mercedes E-Class or similar", "Up to 3 passengers", "Bottled water & Wi-Fi", "Meet & greet included"]
-      },
-      {
-        "name": "Van",
-        "desc": "Groups & families",
-        "price": "2.10",
-        "features": ["Up to 7 passengers", "7 suitcases", "Child seats available", "Ideal for cruises & groups"]
       }
     ],
     "popular": "Most popular",
@@ -306,9 +299,9 @@
   },
   "about": {
     "title": "About StylTaxi",
-    "subtitle": "A Barcelona taxi company built on punctuality, discretion and care.",
+    "subtitle": "A Sabadell taxi company built on punctuality, discretion and care.",
     "storyTitle": "Driven by a simple idea",
-    "story1": "StylTaxi was born in Barcelona with one conviction: a taxi ride should be the easiest part of your day. What began as a small family operation has grown into a trusted transfer service for travellers, families and companies across Catalonia.",
+    "story1": "StylTaxi was born in Sabadell with one conviction: a taxi ride should be the easiest part of your day. What began as a small family operation has grown into a trusted transfer service for travellers, families and companies across Catalonia.",
     "story2": "Every driver in our team is licensed, locally experienced and personally vetted. Every vehicle is inspected, insured and impeccably clean. And every booking — from a five-minute city hop to a cross-country transfer — receives the same attention to detail.",
     "story3": "We are proudly local. We know the shortcut when the Ronda is jammed, the best hour to reach El Prat, and the exact door of every terminal, port and hotel in the city.",
     "valuesTitle": "What we stand for",
@@ -318,10 +311,10 @@
       { "title": "Care", "text": "From child seats to a hand with your luggage, the small details are the heart of our service." }
     ],
     "ctaTitle": "Experience the difference",
-    "ctaText": "Join thousands of passengers who never worry about transport in Barcelona."
+    "ctaText": "Join thousands of passengers who never worry about transport in Sabadell."
   },
   "airportPage": {
-    "title": "Barcelona Airport Transfers",
+    "title": "Sabadell Airport Transfers",
     "subtitle": "Meet & greet at arrivals, live flight tracking and fixed prices to and from El Prat, Girona and Reus.",
     "benefitsTitle": "Airport pickups, perfected",
     "benefits": [
@@ -346,7 +339,7 @@
       { "title": "Discreet drivers", "text": "Professionally dressed, multilingual drivers who understand confidentiality." },
       { "title": "Event logistics", "text": "Congresses, roadshows and team offsites — coordinated fleets with a single point of contact." }
     ],
-    "trustTitle": "Trusted by companies across Barcelona",
+    "trustTitle": "Trusted by companies across Sabadell",
     "trustText": "From startups to multinationals, teams rely on StylTaxi to move executives, clients and candidates without a second thought.",
     "ctaTitle": "Set up a corporate account",
     "ctaText": "Tell us about your travel needs and we will prepare a tailored proposal within 24 hours."
@@ -380,10 +373,10 @@
     },
     "send": "Send message",
     "sent": "Message sent! We will get back to you shortly.",
-    "mapTitle": "StylTaxi service area — Barcelona"
+    "mapTitle": "StylTaxi service area — Sabadell"
   },
   "footer": {
-    "tagline": "Premium taxi and airport transfers in Barcelona. Fixed prices, professional drivers, available 24/7.",
+    "tagline": "Premium taxi and airport transfers in Sabadell. Fixed prices, professional drivers, available 24/7.",
     "quickLinks": "Quick Links",
     "services": "Services",
     "contact": "Contact",
@@ -400,7 +393,7 @@
       "sections": [
         {
           "h": "1. Who we are",
-          "p": "StylTaxi (\"we\", \"us\") operates the styltaxi.com website and provides taxi and transfer services in Barcelona, Spain. We are the data controller for the personal information collected through this website."
+          "p": "StylTaxi (\"we\", \"us\") operates the styltaxi.com website and provides taxi and transfer services in Sabadell, Spain. We are the data controller for the personal information collected through this website."
         },
         {
           "h": "2. Data we collect",
@@ -434,7 +427,7 @@
       "sections": [
         {
           "h": "1. Service",
-          "p": "StylTaxi provides licensed taxi and private transfer services in Barcelona and throughout Spain. A booking becomes binding when we send you a written confirmation with the agreed price."
+          "p": "StylTaxi provides licensed taxi and private transfer services in Sabadell and throughout Spain. A booking becomes binding when we send you a written confirmation with the agreed price."
         },
         {
           "h": "2. Prices and payment",
@@ -458,7 +451,7 @@
         },
         {
           "h": "7. Applicable law",
-          "p": "These terms are governed by Spanish law. Any dispute shall be submitted to the courts of Barcelona, without prejudice to mandatory consumer protection rules."
+          "p": "These terms are governed by Spanish law. Any dispute shall be submitted to the courts of Sabadell, without prejudice to mandatory consumer protection rules."
         }
       ]
     }
@@ -469,36 +462,36 @@
       "desc": "Premium taxi service in Sabadell and Sant Quirze del Vallès. Airport transfers, city rides, business travel and long-distance transport, available 24 hours with fixed prices."
     },
     "about": {
-      "title": "About Us — StylTaxi Barcelona",
-      "desc": "Meet StylTaxi: licensed drivers, immaculate vehicles and a decade of punctual journeys across Barcelona and Catalonia."
+      "title": "About Us — StylTaxi Sabadell",
+      "desc": "Meet StylTaxi: licensed drivers, immaculate vehicles and a decade of punctual journeys across Sabadell and Catalonia."
     },
     "services": {
-      "title": "Our Services — StylTaxi Barcelona",
-      "desc": "Airport transfers, hotel transfers, corporate travel, city taxi, long-distance and event transport in Barcelona. Fixed prices, 24/7."
+      "title": "Our Services — StylTaxi Sabadell",
+      "desc": "Airport transfers, hotel transfers, corporate travel, city taxi, long-distance and event transport in Sabadell. Fixed prices, 24/7."
     },
     "airport": {
-      "title": "Barcelona Airport Transfers — StylTaxi",
-      "desc": "Fixed-price transfers to and from Barcelona–El Prat, Girona and Reus airports. Flight tracking, meet & greet and free waiting time."
+      "title": "Sabadell Airport Transfers — StylTaxi",
+      "desc": "Fixed-price transfers to and from Sabadell–El Prat, Girona and Reus airports. Flight tracking, meet & greet and free waiting time."
     },
     "corporate": {
-      "title": "Corporate Travel — StylTaxi Barcelona",
-      "desc": "Executive taxi service for companies in Barcelona: priority booking, monthly invoicing, discreet multilingual drivers."
+      "title": "Corporate Travel — StylTaxi Sabadell",
+      "desc": "Executive taxi service for companies in Sabadell: priority booking, monthly invoicing, discreet multilingual drivers."
     },
     "pricing": {
-      "title": "Pricing — StylTaxi Barcelona",
-      "desc": "Transparent fixed prices for taxi and airport transfers in Barcelona. Tolls and VAT included, no surprises."
+      "title": "Pricing — StylTaxi Sabadell",
+      "desc": "Transparent fixed prices for taxi and airport transfers in Sabadell. Tolls and VAT included, no surprises."
     },
     "faq": {
-      "title": "FAQ — StylTaxi Barcelona",
-      "desc": "Answers about bookings, fixed prices, flight delays, child seats, payments and cancellations at StylTaxi Barcelona."
+      "title": "FAQ — StylTaxi Sabadell",
+      "desc": "Answers about bookings, fixed prices, flight delays, child seats, payments and cancellations at StylTaxi Sabadell."
     },
     "contact": {
-      "title": "Contact — StylTaxi Barcelona",
-      "desc": "Contact StylTaxi by phone, WhatsApp or email. Available 24 hours for bookings and quotes in Barcelona."
+      "title": "Contact — StylTaxi Sabadell",
+      "desc": "Contact StylTaxi by phone, WhatsApp or email. Available 24 hours for bookings and quotes in Sabadell."
     },
     "book": {
-      "title": "Book Your Taxi — StylTaxi Barcelona",
-      "desc": "Book your Barcelona taxi or airport transfer online in under two minutes. Fixed price and instant confirmation."
+      "title": "Book Your Taxi — StylTaxi Sabadell",
+      "desc": "Book your Sabadell taxi or airport transfer online in under two minutes. Fixed price and instant confirmation."
     },
     "privacy": {
       "title": "Privacy Policy — StylTaxi",
@@ -506,7 +499,7 @@
     },
     "terms": {
       "title": "Terms of Service — StylTaxi",
-      "desc": "The terms governing bookings and journeys with StylTaxi Barcelona."
+      "desc": "The terms governing bookings and journeys with StylTaxi Sabadell."
     }
   },
   "notFound": {
