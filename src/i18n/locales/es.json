@@ -65,7 +65,7 @@
     "items": {
       "airport": {
         "title": "Traslados al Aeropuerto",
-        "desc": "Recogidas y llegadas puntuales en Sabadell–El Prat, Girona y Reus, con seguimiento de vuelo y recepción personalizada."
+        "desc": "Recogidas y llegadas puntuales en Barcelona–El Prat, Girona y Reus, con seguimiento de vuelo y recepción personalizada."
       },
       "hotel": {
         "title": "Traslados de Hotel",
@@ -156,7 +156,7 @@
     "journey": {
       "title": "¿A dónde te llevamos?",
       "pickup": "Lugar de recogida",
-      "pickupPlaceholder": "p. ej. Aeropuerto de Sabadell T1",
+      "pickupPlaceholder": "p. ej. Aeropuerto de Barcelona T1",
       "destination": "Destino",
       "destinationPlaceholder": "p. ej. Sabadell Centre",
       "date": "Fecha de recogida",
@@ -314,7 +314,7 @@
     "ctaText": "Únete a miles de pasajeros que nunca se preocupan por el transporte en Sabadell."
   },
   "airportPage": {
-    "title": "Traslados al Aeropuerto de Sabadell",
+    "title": "Traslados al Aeropuerto de Barcelona",
     "subtitle": "Recepción en llegadas, seguimiento de vuelos en directo y precios fijos desde y hacia El Prat, Girona y Reus.",
     "benefitsTitle": "Recogidas de aeropuerto, perfeccionadas",
     "benefits": [
@@ -470,8 +470,8 @@
       "desc": "Traslados al aeropuerto, traslados de hotel, viajes corporativos, taxi urbano, larga distancia y eventos en Sabadell. Precios fijos, 24/7."
     },
     "airport": {
-      "title": "Traslados al Aeropuerto de Sabadell — StylTaxi",
-      "desc": "Traslados a precio fijo desde y hacia los aeropuertos de Sabadell–El Prat, Girona y Reus. Seguimiento de vuelos, recepción y espera gratuita."
+      "title": "Traslados al Aeropuerto de Barcelona — StylTaxi",
+      "desc": "Traslados a precio fijo desde y hacia los aeropuertos de Barcelona–El Prat, Girona y Reus. Seguimiento de vuelos, recepción y espera gratuita."
     },
     "corporate": {
       "title": "Viajes Corporativos — StylTaxi Sabadell",
