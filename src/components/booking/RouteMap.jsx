@@ -20,7 +20,7 @@ export default function RouteMap({ pickup, destination, onRoute }) {
     if (!ready || !mapEl.current) return
     if (!mapRef.current) {
       mapRef.current = new window.google.maps.Map(mapEl.current, {
-        center: { lat: 41.3874, lng: 2.1686 }, // Barcelona
+        center: { lat: 41.5463, lng: 2.1086 }, // Sabadell
         zoom: 11,
         disableDefaultUI: true,
         zoomControl: true,

@@ -157,7 +157,7 @@ export default function Contact() {
             <Reveal className="overflow-hidden rounded-[2rem] shadow-soft">
               <iframe
                 title={t('contact.mapTitle')}
-                src="https://www.google.com/maps?q=Barcelona,Spain&z=12&output=embed"
+                src="https://www.google.com/maps?q=Sabadell,Spain&z=12&output=embed"
                 className="h-full min-h-96 w-full border-0"
                 loading="lazy"
                 allowFullScreen

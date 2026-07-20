@@ -26,7 +26,7 @@ export default function Pricing() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-60px' }}
-            className="grid gap-7 md:grid-cols-3"
+            className="mx-auto grid max-w-4xl gap-7 md:grid-cols-2"
           >
             {tiers.map((tier, i) => {
               const featured = i === 1

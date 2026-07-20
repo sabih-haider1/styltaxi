@@ -5,7 +5,7 @@ import SmartImage from '../ui/SmartImage'
 import { fadeUp, stagger } from '../../lib/motion'
 import { IconUsers, IconLuggage } from '../ui/Icons'
 
-const IMAGES = ['/images/business.jpg', '/images/interior.jpg', '/images/fleet.jpg']
+const IMAGES = ['/images/business.jpg', '/images/fleet.jpg']
 
 export default function Fleet() {
   const { t } = useTranslation()
@@ -24,7 +24,7 @@ export default function Fleet() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-60px' }}
-          className="grid gap-7 md:grid-cols-3"
+          className="mx-auto grid max-w-4xl gap-7 md:grid-cols-2"
         >
           {cars.map((car, i) => (
             <motion.article

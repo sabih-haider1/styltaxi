@@ -30,7 +30,7 @@
     "closeMenu": "Tancar menú"
   },
   "hero": {
-    "badge": "Servei de taxi amb llicència · Barcelona",
+    "badge": "Servei de taxi amb llicència · Sabadell",
     "title": "Taxi Sabadell i Sant Quirze del Vallès",
     "subtitle": "Trasllats a l'aeroport, trajectes urbans, viatges de negocis i llarga distància, disponibles les 24 hores.",
     "scroll": "Desplaça't per descobrir",
@@ -40,7 +40,7 @@
     "point4": "Zero emissions / eco"
   },
   "stats": {
-    "title": "La confiança de tot Barcelona",
+    "title": "La confiança de tot Sabadell",
     "years": "Anys d'experiència",
     "rides": "Trajectes completats",
     "clients": "Clients corporatius",
@@ -50,11 +50,11 @@
     "title": "Per Què Triar StylTaxi",
     "subtitle": "Cada detall del teu viatge atès amb cura professional: aquest és el nostre estàndard, no un extra.",
     "items": [
-      { "title": "Conductors Professionals", "text": "Conductors amb llicència, experimentats i atents que coneixen Barcelona al detall." },
+      { "title": "Conductors Professionals", "text": "Conductors amb llicència, experimentats i atents que coneixen la ciutat al detall." },
       { "title": "Sempre Puntuals", "text": "Monitorem el trànsit i el teu vol en temps real per arribar abans que tu." },
       { "title": "Trasllats a l'Aeroport", "text": "Recepció a arribades, seguiment del vol i temps d'espera gratuït inclòs." },
       { "title": "Servei 24/7", "text": "De dia o de nit, caps de setmana i festius: som a una trucada, tots els dies de l'any." },
-      { "title": "Preus Fixos", "text": "El preu que et donem és el preu que pagues. Sense taxímetre, sense sorpreses." },
+      { "title": "Preus Fixos", "text": "El preu que et donem és el preu que pagues. Per a aeroport i recollides." },
       { "title": "Viatge Segur", "text": "Vehicles totalment assegurats, impecablement mantinguts i un historial de seguretat impol·lut." }
     ]
   },
@@ -65,7 +65,7 @@
     "items": {
       "airport": {
         "title": "Trasllats a l'Aeroport",
-        "desc": "Recollides i arribades puntuals a Barcelona–El Prat, Girona i Reus, amb seguiment de vol i recepció personalitzada."
+        "desc": "Recollides i arribades puntuals a Sabadell–El Prat, Girona i Reus, amb seguiment de vol i recepció personalitzada."
       },
       "hotel": {
         "title": "Trasllats d'Hotel",
@@ -77,7 +77,7 @@
       },
       "city": {
         "title": "Taxi Urbà",
-        "desc": "Trajectes ràpids i còmodes per Barcelona quan els necessitis: per telèfon, WhatsApp o en línia."
+        "desc": "Trajectes ràpids i còmodes per Sabadell quan els necessitis: per telèfon, WhatsApp o en línia."
       },
       "longdistance": {
         "title": "Llarga Distància",
@@ -94,7 +94,6 @@
     "subtitle": "Vehicles impecables per a cada grup i cada ocasió.",
     "cars": [
       { "name": "Berlina Executiva", "desc": "Mercedes Classe E o similar", "pax": "Fins a 3 passatgers", "bags": "3 maletes" },
-      { "name": "Van Business", "desc": "Mercedes Classe V o similar", "pax": "Fins a 7 passatgers", "bags": "7 maletes" },
       { "name": "Taxi Estàndard", "desc": "Vehicle urbà confortable", "pax": "Fins a 4 passatgers", "bags": "2 maletes" }
     ]
   },
@@ -130,7 +129,7 @@
       {
         "quote": "Recollida impecable a l'aeroport a les 5 del matí. El conductor esperava amb un cartell amb el meu nom, ens va ajudar amb les maletes i el preu va ser exactament l'acordat.",
         "name": "Laura Martínez",
-        "role": "Viatgera freqüent, Barcelona"
+        "role": "Viatgera freqüent, Sabadell"
       },
       {
         "quote": "Fem servir StylTaxi per a totes les nostres visites executives. En dos anys mai no han arribat tard. Aquesta fiabilitat no té preu per a la nostra empresa.",
@@ -157,9 +156,9 @@
     "journey": {
       "title": "On et portem?",
       "pickup": "Lloc de recollida",
-      "pickupPlaceholder": "p. ex. Aeroport de Barcelona T1",
+      "pickupPlaceholder": "p. ex. Aeroport de Sabadell T1",
       "destination": "Destinació",
-      "destinationPlaceholder": "p. ex. Hotel Arts, Barcelona",
+      "destinationPlaceholder": "p. ex. Sabadell Centre",
       "date": "Data de recollida",
       "time": "Hora de recollida",
       "passengers": "Passatgers",
@@ -251,12 +250,6 @@
         "desc": "Confort de classe business",
         "price": "1,80",
         "features": ["Mercedes Classe E o similar", "Fins a 3 passatgers", "Aigua i Wi-Fi a bord", "Recepció personalitzada inclosa"]
-      },
-      {
-        "name": "Van",
-        "desc": "Grups i famílies",
-        "price": "2,10",
-        "features": ["Fins a 7 passatgers", "7 maletes", "Cadiretes infantils disponibles", "Ideal per a creuers i grups"]
       }
     ],
     "popular": "Més popular",
@@ -306,9 +299,9 @@
   },
   "about": {
     "title": "Sobre StylTaxi",
-    "subtitle": "Una empresa de taxi de Barcelona construïda sobre la puntualitat, la discreció i la cura.",
+    "subtitle": "Una empresa de taxi de Sabadell construïda sobre la puntualitat, la discreció i la cura.",
     "storyTitle": "Impulsats per una idea senzilla",
-    "story1": "StylTaxi va néixer a Barcelona amb una convicció: un trajecte en taxi hauria de ser la part més fàcil del teu dia. El que va començar com un petit negoci familiar s'ha convertit en un servei de trasllats de confiança per a viatgers, famílies i empreses de tot Catalunya.",
+    "story1": "StylTaxi va néixer a Sabadell amb una convicció: un trajecte en taxi hauria de ser la part més fàcil del teu dia. El que va començar com un petit negoci familiar s'ha convertit en un servei de trasllats de confiança per a viatgers, famílies i empreses de tot Catalunya.",
     "story2": "Cada conductor del nostre equip té llicència, experiència local i ha estat seleccionat personalment. Cada vehicle està revisat, assegurat i impecablement net. I cada reserva —d'un trajecte urbà de cinc minuts a un trasllat per tot el país— rep la mateixa atenció al detall.",
     "story3": "Som orgullosament locals. Coneixem la drecera quan la Ronda està col·lapsada, la millor hora per arribar al Prat i la porta exacta de cada terminal, port i hotel de la ciutat.",
     "valuesTitle": "Els nostres valors",
@@ -318,10 +311,10 @@
       { "title": "Cura", "text": "De les cadiretes infantils a un cop de mà amb l'equipatge: els petits detalls són el cor del nostre servei." }
     ],
     "ctaTitle": "Descobreix la diferència",
-    "ctaText": "Uneix-te a milers de passatgers que mai no es preocupen pel transport a Barcelona."
+    "ctaText": "Uneix-te a milers de passatgers que mai no es preocupen pel transport a Sabadell."
   },
   "airportPage": {
-    "title": "Trasllats a l'Aeroport de Barcelona",
+    "title": "Trasllats a l'Aeroport de Sabadell",
     "subtitle": "Recepció a arribades, seguiment de vols en directe i preus fixos des de i cap al Prat, Girona i Reus.",
     "benefitsTitle": "Recollides d'aeroport, perfeccionades",
     "benefits": [
@@ -346,7 +339,7 @@
       { "title": "Conductors discrets", "text": "Conductors amb vestimenta professional, políglotes i conscients de la confidencialitat." },
       { "title": "Logística d'esdeveniments", "text": "Congressos, roadshows i offsites d'equip: flotes coordinades amb un únic punt de contacte." }
     ],
-    "trustTitle": "La confiança d'empreses de tot Barcelona",
+    "trustTitle": "La confiança d'empreses de tot Sabadell",
     "trustText": "De startups a multinacionals, els equips confien en StylTaxi per moure executius, clients i candidats sense pensar-s'ho dues vegades.",
     "ctaTitle": "Obre un compte corporatiu",
     "ctaText": "Explica'ns les teves necessitats de viatge i prepararem una proposta a mida en 24 hores."
@@ -380,10 +373,10 @@
     },
     "send": "Enviar missatge",
     "sent": "Missatge enviat! Et respondrem ben aviat.",
-    "mapTitle": "Àrea de servei de StylTaxi — Barcelona"
+    "mapTitle": "Àrea de servei de StylTaxi — Sabadell"
   },
   "footer": {
-    "tagline": "Taxi premium i trasllats a l'aeroport a Barcelona. Preus fixos, conductors professionals, disponibles 24/7.",
+    "tagline": "Taxi premium i trasllats a l'aeroport a Sabadell. Preus fixos, conductors professionals, disponibles 24/7.",
     "quickLinks": "Enllaços Ràpids",
     "services": "Serveis",
     "contact": "Contacte",
@@ -400,7 +393,7 @@
       "sections": [
         {
           "h": "1. Qui som",
-          "p": "StylTaxi (\"nosaltres\") opera el lloc web styltaxi.com i presta serveis de taxi i trasllats a Barcelona, Espanya. Som els responsables del tractament de les dades personals recollides a través d'aquest lloc web."
+          "p": "StylTaxi (\"nosaltres\") opera el lloc web styltaxi.com i presta serveis de taxi i trasllats a Sabadell, Espanya. Som els responsables del tractament de les dades personals recollides a través d'aquest lloc web."
         },
         {
           "h": "2. Dades que recollim",
@@ -434,7 +427,7 @@
       "sections": [
         {
           "h": "1. Servei",
-          "p": "StylTaxi presta serveis de taxi amb llicència i trasllats privats a Barcelona i a tot Espanya. Una reserva és vinculant quan t'enviem una confirmació per escrit amb el preu acordat."
+          "p": "StylTaxi presta serveis de taxi amb llicència i trasllats privats a Sabadell i a tot Espanya. Una reserva és vinculant quan t'enviem una confirmació per escrit amb el preu acordat."
         },
         {
           "h": "2. Preus i pagament",
@@ -458,7 +451,7 @@
         },
         {
           "h": "7. Llei aplicable",
-          "p": "Aquests termes es regeixen per la llei espanyola. Qualsevol disputa se sotmetrà als tribunals de Barcelona, sens perjudici de les normes imperatives de protecció dels consumidors."
+          "p": "Aquests termes es regeixen per la llei espanyola. Qualsevol disputa se sotmetrà als tribunals de Sabadell, sens perjudici de les normes imperatives de protecció dels consumidors."
         }
       ]
     }
@@ -469,36 +462,36 @@
       "desc": "Servei de taxi premium a Sabadell i Sant Quirze del Vallès. Trasllats a l'aeroport, trajectes urbans, viatges de negocis i llarga distància, 24 hores amb preus fixos."
     },
     "about": {
-      "title": "Nosaltres — StylTaxi Vallès",
+      "title": "Nosaltres — StylTaxi Sabadell",
       "desc": "Coneix StylTaxi: conductors amb llicència, vehicles impecables i trajectes puntuals des de Sabadell i Sant Quirze a tot Catalunya."
     },
     "services": {
-      "title": "Serveis — StylTaxi Barcelona",
-      "desc": "Trasllats a l'aeroport, trasllats d'hotel, viatges corporatius, taxi urbà, llarga distància i esdeveniments a Barcelona. Preus fixos, 24/7."
+      "title": "Serveis — StylTaxi Sabadell",
+      "desc": "Trasllats a l'aeroport, trasllats d'hotel, viatges corporatius, taxi urbà, llarga distància i esdeveniments a Sabadell. Preus fixos, 24/7."
     },
     "airport": {
-      "title": "Trasllats a l'Aeroport de Barcelona — StylTaxi",
-      "desc": "Trasllats a preu fix des de i cap als aeroports de Barcelona–El Prat, Girona i Reus. Seguiment de vols, recepció i espera gratuïta."
+      "title": "Trasllats a l'Aeroport de Sabadell — StylTaxi",
+      "desc": "Trasllats a preu fix des de i cap als aeroports de Sabadell–El Prat, Girona i Reus. Seguiment de vols, recepció i espera gratuïta."
     },
     "corporate": {
-      "title": "Viatges Corporatius — StylTaxi Barcelona",
-      "desc": "Servei de taxi executiu per a empreses a Barcelona: reserva prioritària, facturació mensual i conductors discrets i políglotes."
+      "title": "Viatges Corporatius — StylTaxi Sabadell",
+      "desc": "Servei de taxi executiu per a empreses a Sabadell: reserva prioritària, facturació mensual i conductors discrets i políglotes."
     },
     "pricing": {
-      "title": "Tarifes — StylTaxi Barcelona",
-      "desc": "Preus fixos i transparents per a taxi i trasllats a l'aeroport a Barcelona. Peatges i IVA inclosos, sense sorpreses."
+      "title": "Tarifes — StylTaxi Sabadell",
+      "desc": "Preus fixos i transparents per a taxi i trasllats a l'aeroport a Sabadell. Peatges i IVA inclosos, sense sorprises."
     },
     "faq": {
-      "title": "Preguntes Freqüents — StylTaxi Barcelona",
-      "desc": "Respostes sobre reserves, preus fixos, retards de vols, cadiretes infantils, pagaments i cancel·lacions a StylTaxi Barcelona."
+      "title": "Preguntes Freqüents — StylTaxi Sabadell",
+      "desc": "Respostes sobre reserves, preus fixos, retards de vols, cadiretes infantils, pagaments i cancel·lacions a StylTaxi Sabadell."
     },
     "contact": {
-      "title": "Contacte — StylTaxi Barcelona",
-      "desc": "Contacta amb StylTaxi per telèfon, WhatsApp o correu. Disponibles 24 hores per a reserves i pressupostos a Barcelona."
+      "title": "Contacte — StylTaxi Sabadell",
+      "desc": "Contacta amb StylTaxi per telèfon, WhatsApp o correu. Disponibles 24 hores per a reserves i pressupostos a Sabadell."
     },
     "book": {
-      "title": "Reserva el Teu Taxi — StylTaxi Barcelona",
-      "desc": "Reserva el teu taxi o trasllat a l'aeroport a Barcelona en línia en menys de dos minuts. Preu fix i confirmació immediata."
+      "title": "Reserva el Teu Taxi — StylTaxi Sabadell",
+      "desc": "Reserva el teu taxi o trasllat a l'aeroport a Sabadell en línia en menys de dos minuts. Preu fix i confirmació immediata."
     },
     "privacy": {
       "title": "Política de Privacitat — StylTaxi",
@@ -506,7 +499,7 @@
     },
     "terms": {
       "title": "Termes del Servei — StylTaxi",
-      "desc": "Els termes que regeixen les reserves i trajectes amb StylTaxi Barcelona."
+      "desc": "Els termes que regeixen les reserves i trajectes amb StylTaxi Sabadell."
     }
   },
   "notFound": {
