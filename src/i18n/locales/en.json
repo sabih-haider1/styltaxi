@@ -93,8 +93,8 @@
     "title": "A fleet that makes an impression",
     "subtitle": "Immaculate vehicles for every group size and occasion.",
     "cars": [
-      { "name": "Executive Sedan", "desc": "Mercedes E-Class or similar", "pax": "Up to 3 passengers", "bags": "3 suitcases" },
-      { "name": "Standard Taxi", "desc": "Comfortable city vehicle", "pax": "Up to 4 passengers", "bags": "2 suitcases" }
+      { "name": "Premium Car", "desc": "Premium executive vehicle", "pax": "Up to 3 passengers", "bags": "3 suitcases" },
+      { "name": "Standard Car", "desc": "Comfortable city vehicle", "pax": "Up to 4 passengers", "bags": "2 suitcases" }
     ]
   },
   "eco": {
@@ -278,7 +278,7 @@
         "name": "Executive",
         "desc": "Business-class comfort",
         "price": "1.80",
-        "features": ["Mercedes E-Class or similar", "Up to 3 passengers", "Bottled water & Wi-Fi", "Meet & greet included"]
+        "features": ["Premium executive vehicle", "Up to 3 passengers", "Bottled water & Wi-Fi", "Meet & greet included"]
       }
     ],
     "popular": "Most popular",
@@ -382,6 +382,8 @@
     "whatsappText": "Instant answers and bookings",
     "email": "Email",
     "emailText": "We reply within the hour",
+    "address": "Address",
+    "addressText": "Open in Google Maps",
     "hours": "Business hours",
     "hoursValue": "24 hours · 365 days",
     "hoursText": "Office: Mon–Fri, 9:00–18:00",

@@ -93,8 +93,8 @@
     "title": "Una flota que impresiona",
     "subtitle": "Vehículos impecables para cada grupo y cada ocasión.",
     "cars": [
-      { "name": "Berlina Ejecutiva", "desc": "Mercedes Clase E o similar", "pax": "Hasta 3 pasajeros", "bags": "3 maletas" },
-      { "name": "Taxi Estándar", "desc": "Vehículo urbano confortable", "pax": "Hasta 4 pasajeros", "bags": "2 maletas" }
+      { "name": "Coche Premium", "desc": "Vehículo ejecutivo de gama superior", "pax": "Hasta 3 pasajeros", "bags": "3 maletas" },
+      { "name": "Coche Estándar", "desc": "Vehículo urbano confortable", "pax": "Hasta 4 pasajeros", "bags": "2 maletas" }
     ]
   },
   "eco": {
@@ -278,7 +278,7 @@
         "name": "Ejecutivo",
         "desc": "Confort de clase business",
         "price": "1,80",
-        "features": ["Mercedes Clase E o similar", "Hasta 3 pasajeros", "Agua y Wi-Fi a bordo", "Recepción personalizada incluida"]
+        "features": ["Vehículo premium de gama superior", "Hasta 3 pasajeros", "Agua y Wi-Fi a bordo", "Recepción personalizada incluida"]
       }
     ],
     "popular": "Más popular",
@@ -382,6 +382,8 @@
     "whatsappText": "Respuestas y reservas al instante",
     "email": "Email",
     "emailText": "Respondemos en menos de una hora",
+    "address": "Dirección",
+    "addressText": "Ver en Google Maps",
     "hours": "Horario",
     "hoursValue": "24 horas · 365 días",
     "hoursText": "Oficina: lun–vie, 9:00–18:00",

@@ -93,8 +93,8 @@
     "title": "Una flota que impressiona",
     "subtitle": "Vehicles impecables per a cada grup i cada ocasió.",
     "cars": [
-      { "name": "Berlina Executiva", "desc": "Mercedes Classe E o similar", "pax": "Fins a 3 passatgers", "bags": "3 maletes" },
-      { "name": "Taxi Estàndard", "desc": "Vehicle urbà confortable", "pax": "Fins a 4 passatgers", "bags": "2 maletes" }
+      { "name": "Cotxe Premium", "desc": "Vehicle executiu de gamma superior", "pax": "Fins a 3 passatgers", "bags": "3 maletes" },
+      { "name": "Cotxe Estàndard", "desc": "Vehicle urbà confortable", "pax": "Fins a 4 passatgers", "bags": "2 maletes" }
     ]
   },
   "eco": {
@@ -278,7 +278,7 @@
         "name": "Executiu",
         "desc": "Confort de classe business",
         "price": "1,80",
-        "features": ["Mercedes Classe E o similar", "Fins a 3 passatgers", "Aigua i Wi-Fi a bord", "Recepció personalitzada inclosa"]
+        "features": ["Vehicle premium de gamma superior", "Fins a 3 passatgers", "Aigua i Wi-Fi a bord", "Recepció personalitzada inclosa"]
       }
     ],
     "popular": "Més popular",
@@ -382,6 +382,8 @@
     "whatsappText": "Respostes i reserves a l'instant",
     "email": "Correu electrònic",
     "emailText": "Responem en menys d'una hora",
+    "address": "Adreça",
+    "addressText": "Obrir a Google Maps",
     "hours": "Horari",
     "hoursValue": "24 hores · 365 dies",
     "hoursText": "Oficina: dl–dv, 9:00–18:00",

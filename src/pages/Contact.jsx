@@ -11,7 +11,7 @@ import Field, { inputCls } from '../components/booking/Field'
 import { deliverForm } from '../lib/submit'
 import { SITE } from '../lib/site'
 import { fadeUp, stagger } from '../lib/motion'
-import { IconPhone, IconWhatsApp, IconMail, IconClock, IconCheck } from '../components/ui/Icons'
+import { IconPhone, IconWhatsApp, IconMail, IconClock, IconCheck, IconMapPin } from '../components/ui/Icons'
 
 export default function Contact() {
   const { t } = useTranslation()
@@ -26,6 +26,7 @@ export default function Contact() {
     { Icon: IconPhone, title: t('contact.phone'), value: SITE.phone, text: t('contact.phoneText'), href: SITE.phoneHref },
     { Icon: IconWhatsApp, title: t('contact.whatsapp'), value: SITE.phone, text: t('contact.whatsappText'), href: SITE.whatsappHref },
     { Icon: IconMail, title: t('contact.email'), value: SITE.email, text: t('contact.emailText'), href: `mailto:${SITE.email}` },
+    { Icon: IconMapPin, title: t('contact.address'), value: SITE.address, text: t('contact.addressText'), href: SITE.addressHref },
     { Icon: IconClock, title: t('contact.hours'), value: t('contact.hoursValue'), text: t('contact.hoursText') },
   ]
 
@@ -50,7 +51,7 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-60px' }}
-            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
           >
             {cards.map(({ Icon, title, value, text, href }, i) => {
               const inner = (
@@ -157,7 +158,7 @@ export default function Contact() {
             <Reveal className="overflow-hidden rounded-[2rem] shadow-soft">
               <iframe
                 title={t('contact.mapTitle')}
-                src="https://www.google.com/maps?q=Sabadell,Spain&z=12&output=embed"
+                src="https://www.google.com/maps?q=Pla%C3%A7a+Catalunya+12,+Sabadell&z=16&output=embed"
                 className="h-full min-h-96 w-full border-0"
                 loading="lazy"
                 allowFullScreen

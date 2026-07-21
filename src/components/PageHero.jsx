@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { EASE } from '../lib/motion'
 
 /** Dark hero band for interior pages, with optional background image. */
-export default function PageHero({ title, subtitle, image, compact = false }) {
+export default function PageHero({ title, subtitle, image, compact = false, children }) {
   return (
     <section
       className={`relative flex items-end overflow-hidden bg-ink-950 ${
@@ -48,6 +48,15 @@ export default function PageHero({ title, subtitle, image, compact = false }) {
           >
             {subtitle}
           </motion.p>
+        )}
+        {children && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: EASE, delay: 0.4 }}
+          >
+            {children}
+          </motion.div>
         )}
       </div>
     </section>
