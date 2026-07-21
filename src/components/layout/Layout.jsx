@@ -1,9 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import FloatingActions from './FloatingActions'
+import FloatingRatingBadge from './FloatingRatingBadge'
+import ReviewModal from '../ui/ReviewModal'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -15,6 +17,14 @@ function ScrollToTop() {
 
 export default function Layout({ children }) {
   const { t } = useTranslation()
+  const [reviewModalOpen, setReviewModalOpen] = useState(false)
+
+  useEffect(() => {
+    const handleOpenModal = () => setReviewModalOpen(true)
+    window.addEventListener('open-review-modal', handleOpenModal)
+    return () => window.removeEventListener('open-review-modal', handleOpenModal)
+  }, [])
+
   return (
     <>
       <a
@@ -27,7 +37,11 @@ export default function Layout({ children }) {
       <Navbar />
       {children}
       <FloatingActions />
+      <FloatingRatingBadge onClick={() => setReviewModalOpen(true)} />
       <Footer />
+
+      <ReviewModal isOpen={reviewModalOpen} onClose={() => setReviewModalOpen(false)} />
     </>
   )
 }
+
