@@ -13,6 +13,8 @@ export const SITE = {
     facebook: 'https://facebook.com/styltaxi',
     x: 'https://x.com/styltaxi',
   },
+  googleReviewUrl: import.meta.env.VITE_GOOGLE_REVIEW_URL || 'https://search.google.com/local/writereview?placeid=ChIJnZzB9J2ipBIRH36iW1mXQ3M', // Example or custom link
+  googleProfileUrl: import.meta.env.VITE_GOOGLE_PROFILE_URL || 'https://g.page/r/ChIJnZzB9J2ipBIRH36iW1mXQ3M', // Example or custom profile link
 }
 
 export const MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || ''

@@ -129,19 +129,48 @@
       {
         "quote": "Recogida impecable en el aeropuerto a las 5 de la mañana. El conductor esperaba con un cartel con mi nombre, nos ayudó con las maletas y el precio fue exactamente el acordado.",
         "name": "Laura Martínez",
-        "role": "Viajera frecuente, Sabadell"
+        "role": "Viajera frecuente, Sabadell",
+        "date": "Hace 2 semanas"
       },
       {
         "quote": "Usamos StylTaxi para todas nuestras visitas ejecutivas. En dos años nunca han llegado tarde. Esa fiabilidad no tiene precio para nuestra empresa.",
         "name": "James Whitfield",
-        "role": "Director de Operaciones, empresa tecnológica"
+        "role": "Director de Operaciones, empresa tecnológica",
+        "date": "Hace 3 semanas"
       },
       {
         "quote": "Vam reservar per al casament de la nostra filla. Cotxes impecables, conductors elegants i puntualitat absoluta. Totalment recomanable.",
         "name": "Montserrat Puig",
-        "role": "Cliente de eventos especiales"
+        "role": "Cliente de eventos especiales",
+        "date": "Hace 1 mes"
       }
     ]
+  },
+  "reviews": {
+    "dashboardDesc": "Valoración media de los pasajeros verificados de Google en Sabadell y alrededores.",
+    "btnWrite": "Escribir reseña",
+    "btnView": "Ver en Google",
+    "verifiedBadge": "Pasajero Verificado",
+    "fallbackDate": "Recientemente",
+    "badgeSubtitle": "Valoración Google",
+    "modalTitle": "Comparte tu experiencia",
+    "modalSubtitle": "Valoramos tu opinión para seguir mejorando nuestro servicio premium.",
+    "googleTitle": "Reseña en Google (Recomendado)",
+    "googleDesc": "Si tienes una cuenta de Google, por favor califícanos directamente en Google. Te llevará 30 segundos y nos ayuda a crecer.",
+    "googleBtn": "Escribir reseña en Google",
+    "privateTitle": "Comentarios Privados",
+    "privateDesc": "¿Prefieres enviarnos tus comentarios directamente? Rellena el siguiente formulario.",
+    "privateBtn": "Enviar Comentarios Privados",
+    "labelName": "Tu Nombre",
+    "labelRating": "Tu Valoración",
+    "labelMessage": "Tu Mensaje / Reseña",
+    "nameRequired": "Por favor, introduce tu nombre",
+    "msgRequired": "Por favor, introduce tu mensaje",
+    "successTitle": "¡Muchas gracias!",
+    "successDesc": "Tus comentarios han sido enviados directamente al equipo de StylTaxi. Agradecemos tu apoyo.",
+    "successGoogleCTA": "¿Quieres ayudarnos aún más? Considera copiar tu comentario y publicarlo en nuestra página de Google:",
+    "submitting": "Enviando...",
+    "close": "Cerrar"
   },
   "ctaBanner": {
     "title": "Tu conductor, a un clic de distancia",

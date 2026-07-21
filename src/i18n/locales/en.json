@@ -129,19 +129,48 @@
       {
         "quote": "Flawless airport pickup at 5 a.m. The driver was waiting with a name sign, helped with our bags and the price was exactly as quoted.",
         "name": "Laura Martínez",
-        "role": "Frequent flyer, Sabadell"
+        "role": "Frequent flyer, Sabadell",
+        "date": "2 weeks ago"
       },
       {
         "quote": "We use StylTaxi for all our executive visits. In two years they have never been late. That reliability is priceless for our company.",
         "name": "James Whitfield",
-        "role": "Operations Director, tech company"
+        "role": "Operations Director, tech company",
+        "date": "3 weeks ago"
       },
       {
         "quote": "Vam reservar per al casament de la nostra filla. Cotxes impecables, conductors elegants i puntualitat absoluta. Totalment recomanable.",
         "name": "Montserrat Puig",
-        "role": "Special events client"
+        "role": "Special events client",
+        "date": "1 month ago"
       }
     ]
+  },
+  "reviews": {
+    "dashboardDesc": "Average rating from verified Google passengers in Sabadell and surrounding areas.",
+    "btnWrite": "Write a Review",
+    "btnView": "View on Google",
+    "verifiedBadge": "Verified Passenger",
+    "fallbackDate": "Recently",
+    "badgeSubtitle": "Google Rating",
+    "modalTitle": "Share your experience",
+    "modalSubtitle": "We value your feedback to continuously improve our premium service.",
+    "googleTitle": "Google Review (Recommended)",
+    "googleDesc": "If you have a Google account, please rate us directly on Google. It takes 30 seconds and helps us grow.",
+    "googleBtn": "Write Review on Google",
+    "privateTitle": "Private Feedback",
+    "privateDesc": "Rather send your thoughts directly to us? Fill in the form below.",
+    "privateBtn": "Submit Private Feedback",
+    "labelName": "Your Name",
+    "labelRating": "Your Rating",
+    "labelMessage": "Your Message / Review",
+    "nameRequired": "Please enter your name",
+    "msgRequired": "Please enter your message",
+    "successTitle": "Thank you!",
+    "successDesc": "Your feedback has been sent directly to the StylTaxi team. We appreciate your support.",
+    "successGoogleCTA": "Want to help us even more? Consider copying your feedback and posting it to our Google page:",
+    "submitting": "Sending...",
+    "close": "Close"
   },
   "ctaBanner": {
     "title": "Your driver is one click away",
