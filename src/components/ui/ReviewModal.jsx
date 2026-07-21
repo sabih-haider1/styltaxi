@@ -173,118 +173,122 @@ export default function ReviewModal({ isOpen, onClose }) {
                 </div>
 
                 <div className="mt-6 min-h-[260px]">
-                  {activeTab === 'google' ? (
-                    <motion.div
-                      key="google"
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: 10 }}
-                      className="flex flex-col items-center text-center py-4"
-                    >
-                      <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-ink-50 text-ink-900 shadow-soft">
-                        <IconGoogle className="h-10 w-10" />
-                      </span>
-                      <h3 className="mt-5 font-display text-lg font-bold text-ink-950">
-                        {t('reviews.googleTitle')}
-                      </h3>
-                      <p className="mt-2.5 max-w-sm text-sm leading-relaxed text-ink-500">
-                        {t('reviews.googleDesc')}
-                      </p>
-                      <a
-                        href={SITE.googleReviewUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-2xl bg-brand-700 py-4 font-display text-sm font-bold text-white shadow-glow transition-all duration-300 hover:bg-brand-800 hover:shadow-lift"
+                  <AnimatePresence mode="wait">
+                    {activeTab === 'google' ? (
+                      <motion.div
+                        key="google"
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: 10 }}
+                        className="flex flex-col items-center text-center py-4"
                       >
-                        <IconGoogle className="h-5 w-5" />
-                        {t('reviews.googleBtn')}
-                        <IconExternalLink className="h-4.5 w-4.5 text-white/80" />
-                      </a>
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      key="private"
-                      initial={{ opacity: 0, x: 10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: -10 }}
-                    >
-                      <p className="text-sm text-ink-500 mb-5">
-                        {t('reviews.privateDesc')}
-                      </p>
-                      <form onSubmit={handlePrivateSubmit} className="space-y-4">
-                        <Field
-                          label={t('reviews.labelName')}
-                          htmlFor="r-name"
-                          error={nameError}
+                        <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-ink-50 text-ink-900 shadow-soft">
+                          <IconGoogle className="h-10 w-10" />
+                        </span>
+                        <h3 className="mt-5 font-display text-lg font-bold text-ink-950">
+                          {t('reviews.googleTitle')}
+                        </h3>
+                        <p className="mt-2.5 max-w-sm text-sm leading-relaxed text-ink-500">
+                          {t('reviews.googleDesc')}
+                        </p>
+                        <a
+                          href={SITE.googleReviewUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-2xl bg-brand-700 py-4 font-display text-sm font-bold text-white shadow-glow transition-all duration-300 hover:bg-brand-800 hover:shadow-lift"
                         >
-                          <input
-                            id="r-name"
-                            type="text"
-                            value={name}
-                            onChange={(e) => {
-                              setName(e.target.value)
-                              if (e.target.value.trim()) setNameError('')
-                            }}
-                            className={inputCls}
-                          />
-                        </Field>
+                          <IconGoogle className="h-5 w-5" />
+                          {t('reviews.googleBtn')}
+                          <IconExternalLink className="h-4.5 w-4.5 text-white/80" />
+                        </a>
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        key="private"
+                        initial={{ opacity: 0, x: 10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -10 }}
+                      >
+                        <p className="text-sm text-ink-500 mb-5">
+                          {t('reviews.privateDesc')}
+                        </p>
+                        <form onSubmit={handlePrivateSubmit} className="space-y-4">
+                          <Field
+                            label={t('reviews.labelName')}
+                            htmlFor="r-name"
+                            error={nameError}
+                          >
+                            <input
+                              id="r-name"
+                              type="text"
+                              value={name}
+                              onChange={(e) => {
+                                setName(e.target.value)
+                                if (e.target.value.trim()) setNameError('')
+                              }}
+                              className={inputCls}
+                              aria-invalid={!!nameError || undefined}
+                            />
+                          </Field>
 
-                        <div>
-                          <label className="mb-2 block font-display text-sm font-semibold text-ink-800">
-                            {t('reviews.labelRating')}
-                          </label>
-                          <div className="flex gap-1.5 text-ink-200">
-                            {[1, 2, 3, 4, 5].map((star) => {
-                              const active = hoverRating ? star <= hoverRating : star <= rating
-                              return (
-                                <button
-                                  key={star}
-                                  type="button"
-                                  onClick={() => setRating(star)}
-                                  onMouseEnter={() => setHoverRating(star)}
-                                  onMouseLeave={() => setHoverRating(0)}
-                                  className="transition-transform duration-100 hover:scale-115 focus:outline-none"
-                                >
-                                  <IconStar
-                                    className={`h-8 w-8 ${
-                                      active
-                                        ? 'fill-gold-500 text-gold-500'
-                                        : 'fill-ink-100 text-ink-200'
-                                    }`}
-                                  />
-                                </button>
-                              )
-                            })}
+                          <div>
+                            <label className="mb-2 block font-display text-sm font-semibold text-ink-800">
+                              {t('reviews.labelRating')}
+                            </label>
+                            <div className="flex gap-1.5 text-ink-200">
+                              {[1, 2, 3, 4, 5].map((star) => {
+                                const active = hoverRating ? star <= hoverRating : star <= rating
+                                return (
+                                  <button
+                                    key={star}
+                                    type="button"
+                                    onClick={() => setRating(star)}
+                                    onMouseEnter={() => setHoverRating(star)}
+                                    onMouseLeave={() => setHoverRating(0)}
+                                    className="transition-transform duration-100 hover:scale-115 focus:outline-none"
+                                  >
+                                    <IconStar
+                                      className={`h-8 w-8 ${
+                                        active
+                                          ? 'fill-gold-500 text-gold-500'
+                                          : 'fill-ink-100 text-ink-200'
+                                      }`}
+                                    />
+                                  </button>
+                                )
+                              })}
+                            </div>
                           </div>
-                        </div>
 
-                        <Field
-                          label={t('reviews.labelMessage')}
-                          htmlFor="r-message"
-                          error={messageError}
-                        >
-                          <textarea
-                            id="r-message"
-                            rows={3}
-                            value={message}
-                            onChange={(e) => {
-                              setMessage(e.target.value)
-                              if (e.target.value.trim()) setMessageError('')
-                            }}
-                            className={`${inputCls} resize-none`}
-                          />
-                        </Field>
+                          <Field
+                            label={t('reviews.labelMessage')}
+                            htmlFor="r-message"
+                            error={messageError}
+                          >
+                            <textarea
+                              id="r-message"
+                              rows={3}
+                              value={message}
+                              onChange={(e) => {
+                                setMessage(e.target.value)
+                                if (e.target.value.trim()) setMessageError('')
+                              }}
+                              className={`${inputCls} resize-none`}
+                              aria-invalid={!!messageError || undefined}
+                            />
+                          </Field>
 
-                        <button
-                          type="submit"
-                          disabled={isSubmitting}
-                          className="mt-2 flex w-full items-center justify-center rounded-2xl bg-brand-700 py-3.5 font-display text-sm font-bold text-white shadow-glow transition-all duration-300 hover:bg-brand-800 hover:shadow-lift disabled:opacity-70"
-                        >
-                          {isSubmitting ? t('reviews.submitting') : t('reviews.privateBtn')}
-                        </button>
-                      </form>
-                    </motion.div>
-                  )}
+                          <button
+                            type="submit"
+                            disabled={isSubmitting}
+                            className="mt-2 flex w-full items-center justify-center rounded-2xl bg-brand-700 py-3.5 font-display text-sm font-bold text-white shadow-glow transition-all duration-300 hover:bg-brand-800 hover:shadow-lift disabled:opacity-70"
+                          >
+                            {isSubmitting ? t('reviews.submitting') : t('reviews.privateBtn')}
+                          </button>
+                        </form>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </div>
             )}
