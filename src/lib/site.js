@@ -15,6 +15,8 @@ export const SITE = {
   },
   googleReviewUrl: import.meta.env.VITE_GOOGLE_REVIEW_URL || 'https://search.google.com/local/writereview?placeid=ChIJnZzB9J2ipBIRH36iW1mXQ3M', // Example or custom link
   googleProfileUrl: import.meta.env.VITE_GOOGLE_PROFILE_URL || 'https://g.page/r/ChIJnZzB9J2ipBIRH36iW1mXQ3M', // Example or custom profile link
+  address: 'Plaça Catalunya 12, Sabadell',
+  addressHref: 'https://maps.google.com/?q=Pla%C3%A7a+Catalunya+12,+Sabadell',
 }
 
 export const MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY || ''

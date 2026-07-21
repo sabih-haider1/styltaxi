@@ -382,6 +382,8 @@
     "whatsappText": "Respostes i reserves a l'instant",
     "email": "Correu electrònic",
     "emailText": "Responem en menys d'una hora",
+    "address": "Adreça",
+    "addressText": "Obrir a Google Maps",
     "hours": "Horari",
     "hoursValue": "24 hores · 365 dies",
     "hoursText": "Oficina: dl–dv, 9:00–18:00",

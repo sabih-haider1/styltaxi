@@ -382,6 +382,8 @@
     "whatsappText": "Respuestas y reservas al instante",
     "email": "Email",
     "emailText": "Respondemos en menos de una hora",
+    "address": "Dirección",
+    "addressText": "Ver en Google Maps",
     "hours": "Horario",
     "hoursValue": "24 horas · 365 días",
     "hoursText": "Oficina: lun–vie, 9:00–18:00",
