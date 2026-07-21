@@ -18,7 +18,16 @@ export default function AirportTransfers() {
   return (
     <PageWrap>
       <Seo page="airport" />
-      <PageHero title={t('airportPage.title')} subtitle={t('airportPage.subtitle')} image="/images/airport.jpg" />
+      <PageHero title={t('airportPage.title')} subtitle={t('airportPage.subtitle')} image="/images/airport.jpg">
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Button to="/book" size="lg">
+            {t('common.bookNow')}
+          </Button>
+          <Button to="/pricing" variant="light" size="lg">
+            {t('nav.pricing')}
+          </Button>
+        </div>
+      </PageHero>
 
       <section className="bg-white py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
